@@ -1,0 +1,107 @@
+{
+  "eval_dir": "/Users/Sonny/Research/W\uff5cECFGClassifier/experiments/task_aware_denoiser_finetune/mil_evaluations/threshold_mil_eval_001",
+  "checkpoint": "/Users/Sonny/Research/W\uff5cECFGClassifier/experiments/task_aware_denoiser_finetune/mil_experiments/exp_002/checkpoints/last.ckpt",
+  "checkpoint_epoch": 2,
+  "checkpoint_global_step": 265586,
+  "device": "cpu",
+  "split": "val",
+  "threshold": 0.1,
+  "ensure_at_least_one": true,
+  "mapping_preset": "raw19_identity",
+  "bag_batch_size": 4,
+  "max_bags": 0,
+  "topk_fraction": 0.25,
+  "min_topk": 1,
+  "class_order": [
+    "21AvB",
+    "AF",
+    "AtCou",
+    "AtRun",
+    "ComHB",
+    "EctAR",
+    "EctAt",
+    "EctVe",
+    "Idiov",
+    "JuRhy",
+    "Noise",
+    "PaRhy",
+    "Pause",
+    "SArrh",
+    "SRhy",
+    "SVT",
+    "VT",
+    "VeCou",
+    "Wenck"
+  ]
+}
+[manifest] resolving 20 day folders
+[manifest] class=21AvB selected=7696 train=6156 val=770 test=770
+[manifest] class=AF selected=9997 train=7997 val=1000 test=1000
+[manifest] class=AtCou selected=9993 train=7995 val=999 test=999
+[manifest] class=AtRun selected=9998 train=7998 val=1000 test=1000
+[manifest] class=ComHB selected=3427 train=2741 val=343 test=343
+[manifest] class=EctAR selected=9325 train=7461 val=932 test=932
+[manifest] class=EctAt selected=9998 train=7998 val=1000 test=1000
+[manifest] class=EctVe selected=9998 train=7998 val=1000 test=1000
+[manifest] class=Idiov selected=458 train=366 val=46 test=46
+[manifest] class=JuRhy selected=9443 train=7555 val=944 test=944
+[manifest] class=Noise selected=19299 train=15439 val=1930 test=1930
+[manifest] class=PaRhy selected=3121 train=2497 val=312 test=312
+[manifest] class=Pause selected=8173 train=6539 val=817 test=817
+[manifest] class=SArrh selected=10000 train=8000 val=1000 test=1000
+[manifest] class=SRhy selected=9997 train=7997 val=1000 test=1000
+[manifest] class=SVT selected=9674 train=7740 val=967 test=967
+[manifest] class=VT selected=5402 train=4322 val=540 test=540
+[manifest] class=VeCou selected=9997 train=7997 val=1000 test=1000
+[manifest] class=Wenck selected=9997 train=7997 val=1000 test=1000
+[manifest] total_files=165993 total_windows=1330782
+[val] using subset bags=16600/16600 max_bags=0
+[val] subset_class_counts={"21AvB": 770, "AF": 1000, "AtCou": 999, "AtRun": 1000, "ComHB": 343, "EctAR": 932, "EctAt": 1000, "EctVe": 1000, "Idiov": 46, "JuRhy": 944, "Noise": 1930, "PaRhy": 312, "Pause": 817, "SArrh": 1000, "SRhy": 1000, "SVT": 967, "VT": 540, "VeCou": 1000, "Wenck": 1000}
+[init] pretrained_cnn_bilstm from best_model.pt loaded 41 tensors; skipped 2 mismatched tensors
+[val][batch 1/4150] bags=4
+[val][batch 250/4150] bags=1000
+[val][batch 500/4150] bags=2000
+[val][batch 750/4150] bags=3000
+[val][batch 1000/4150] bags=4000
+[val][batch 1250/4150] bags=5000
+[val][batch 1500/4150] bags=6000
+[val][batch 1750/4150] bags=7000
+[val][batch 2000/4150] bags=8000
+[val][batch 2250/4150] bags=9000
+[val][batch 2500/4150] bags=10000
+[val][batch 2750/4150] bags=11000
+[val][batch 3000/4150] bags=12000
+[val][batch 3250/4150] bags=13000
+[val][batch 3500/4150] bags=14000
+[val][batch 3750/4150] bags=15000
+[val][batch 4000/4150] bags=16000
+[val][batch 4150/4150] bags=16600
+{
+  "top1_accuracy": 0.7884939759036145,
+  "threshold_contains_true_rate": 0.9077710843373494,
+  "threshold_exact_single_label_accuracy": 0.548012048192771,
+  "sample_precision": 0.7113202811244981,
+  "sample_recall": 0.9077710843373494,
+  "sample_f1": 0.771004016064257,
+  "micro_precision": 0.5927076777847703,
+  "micro_recall": 0.9077710843373494,
+  "micro_f1": 0.7171616219303255,
+  "macro_precision": 0.6363214407073339,
+  "macro_recall": 0.9004764358340767,
+  "macro_f1": 0.7352684080882722,
+  "average_predicted_labels": 1.531566265060241,
+  "max_predicted_labels": 5,
+  "empty_prediction_count": 0,
+  "loss": 0.7082148886361752,
+  "threshold": 0.1,
+  "ensure_at_least_one": true,
+  "evaluated_batches": 4150,
+  "evaluated_bags": 16600,
+  "checkpoint": "/Users/Sonny/Research/W\uff5cECFGClassifier/experiments/task_aware_denoiser_finetune/mil_experiments/exp_002/checkpoints/last.ckpt",
+  "checkpoint_epoch": 2,
+  "checkpoint_global_step": 265586,
+  "eval_dir": "/Users/Sonny/Research/W\uff5cECFGClassifier/experiments/task_aware_denoiser_finetune/mil_evaluations/threshold_mil_eval_001",
+  "split": "val",
+  "matrix_note": "threshold_prediction_matrix rows may sum above support because one CSV can emit multiple predicted labels."
+}
+[done] wrote threshold outputs to /Users/Sonny/Research/W｜ECFGClassifier/experiments/task_aware_denoiser_finetune/mil_evaluations/threshold_mil_eval_001

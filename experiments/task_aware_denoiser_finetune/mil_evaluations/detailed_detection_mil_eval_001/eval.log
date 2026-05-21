@@ -1,0 +1,155 @@
+{
+  "eval_dir": "/Users/Sonny/Research/W\uff5cECFGClassifier/experiments/task_aware_denoiser_finetune/mil_evaluations/detailed_detection_mil_eval_001",
+  "checkpoint": "/Users/Sonny/Research/W\uff5cECFGClassifier/experiments/task_aware_denoiser_finetune/mil_experiments/exp_009/checkpoints/best.ckpt",
+  "checkpoint_epoch": 1,
+  "checkpoint_global_step": 200000,
+  "device": "mps",
+  "split": "val",
+  "mapping_preset": "raw19_identity",
+  "bag_batch_size": 4,
+  "max_bags": 0,
+  "full_split": true,
+  "class_order": [
+    "21AvB",
+    "AF",
+    "AtCou",
+    "AtRun",
+    "ComHB",
+    "EctAR",
+    "EctAt",
+    "EctVe",
+    "Idiov",
+    "JuRhy",
+    "Noise",
+    "PaRhy",
+    "Pause",
+    "SArrh",
+    "SRhy",
+    "SVT",
+    "VT",
+    "VeCou",
+    "Wenck"
+  ],
+  "model_config": {
+    "model_type": "priority_detection_mil",
+    "detection_mil": {
+      "evidence_head_type": "classifier_mlp",
+      "evidence_head_hidden_dim": 64,
+      "evidence_head_dropout": 0.3,
+      "event_pooling": "logsumexp",
+      "event_lse_tau": 1.0,
+      "rhythm_pooling": "topk_mean",
+      "rhythm_topk_fraction": 0.25,
+      "rhythm_min_topk": 1,
+      "conduction_pooling": "topk_attention_mix",
+      "conduction_topk_fraction": 0.25,
+      "conduction_min_topk": 1,
+      "attention_mix_alpha": 0.5,
+      "default_pooling": "topk_mean",
+      "default_topk_fraction": 0.25,
+      "default_min_topk": 1,
+      "noise_pooling": "topk_mean",
+      "noise_topk_fraction": 0.25,
+      "noise_min_topk": 1,
+      "ce_weight": 1.0,
+      "pos_bce_weight": 0.3,
+      "group_ce_weight": 0.2,
+      "noise_weight": 0.2,
+      "sparsity_weight": 0.0,
+      "consistency_weight": 0.0,
+      "non_noise_as_weak_negative": false,
+      "noise_weak_negative_weight": 0.1,
+      "global_diagnosis_threshold": 0.95,
+      "noise_threshold": 0.5,
+      "class_thresholds": {},
+      "priority_order": [
+        "VT",
+        "ComHB",
+        "Pause",
+        "AF",
+        "SVT",
+        "AtRun",
+        "21AvB",
+        "Wenck",
+        "VeCou",
+        "AtCou",
+        "EctVe",
+        "EctAt",
+        "EctAR",
+        "Idiov",
+        "JuRhy",
+        "PaRhy",
+        "SArrh",
+        "SRhy"
+      ],
+      "top_m_evidence_windows": 3
+    }
+  }
+}
+[manifest] resolving 20 day folders
+[manifest] class=21AvB selected=7696 train=6156 val=770 test=770
+[manifest] class=AF selected=9997 train=7997 val=1000 test=1000
+[manifest] class=AtCou selected=9993 train=7995 val=999 test=999
+[manifest] class=AtRun selected=9998 train=7998 val=1000 test=1000
+[manifest] class=ComHB selected=3427 train=2741 val=343 test=343
+[manifest] class=EctAR selected=9325 train=7461 val=932 test=932
+[manifest] class=EctAt selected=9998 train=7998 val=1000 test=1000
+[manifest] class=EctVe selected=9998 train=7998 val=1000 test=1000
+[manifest] class=Idiov selected=458 train=366 val=46 test=46
+[manifest] class=JuRhy selected=9443 train=7555 val=944 test=944
+[manifest] class=Noise selected=19299 train=15439 val=1930 test=1930
+[manifest] class=PaRhy selected=3121 train=2497 val=312 test=312
+[manifest] class=Pause selected=8173 train=6539 val=817 test=817
+[manifest] class=SArrh selected=10000 train=8000 val=1000 test=1000
+[manifest] class=SRhy selected=9997 train=7997 val=1000 test=1000
+[manifest] class=SVT selected=9674 train=7740 val=967 test=967
+[manifest] class=VT selected=5402 train=4322 val=540 test=540
+[manifest] class=VeCou selected=9997 train=7997 val=1000 test=1000
+[manifest] class=Wenck selected=9997 train=7997 val=1000 test=1000
+[manifest] total_files=165993 total_windows=1330782
+[val] using bags=16600/16600 mode=full
+[val] class_counts={"21AvB": 770, "AF": 1000, "AtCou": 999, "AtRun": 1000, "ComHB": 343, "EctAR": 932, "EctAt": 1000, "EctVe": 1000, "Idiov": 46, "JuRhy": 944, "Noise": 1930, "PaRhy": 312, "Pause": 817, "SArrh": 1000, "SRhy": 1000, "SVT": 967, "VT": 540, "VeCou": 1000, "Wenck": 1000}
+[init] pretrained_cnn_bilstm from best_model.pt loaded 41 tensors; skipped 2 mismatched tensors
+[val][batch 1/4150] bags=4
+[val][batch 250/4150] bags=1000
+[val][batch 500/4150] bags=2000
+[val][batch 750/4150] bags=3000
+[val][batch 1000/4150] bags=4000
+[val][batch 1250/4150] bags=5000
+[val][batch 1500/4150] bags=6000
+[val][batch 1750/4150] bags=7000
+[val][batch 2000/4150] bags=8000
+[val][batch 2250/4150] bags=9000
+[val][batch 2500/4150] bags=10000
+[val][batch 2750/4150] bags=11000
+[val][batch 3000/4150] bags=12000
+[val][batch 3250/4150] bags=13000
+[val][batch 3500/4150] bags=14000
+[val][batch 3750/4150] bags=15000
+[val][batch 4000/4150] bags=16000
+[val][batch 4150/4150] bags=16600
+{
+  "loss": 0.7998129995161863,
+  "evaluated_bags": 16600,
+  "softmax_top1_accuracy": 0.7999397590361446,
+  "softmax_macro_f1": 0.7925544440661006,
+  "priority_primary_accuracy": 0.7146987951807229,
+  "contains_true_rate": 0.8582530120481928,
+  "threshold_accuracy": 0.8582530120481928,
+  "average_predicted_labels": 1.4456626506024097,
+  "sample_precision": 0.6823915662650907,
+  "sample_recall": 0.8582530120481928,
+  "sample_f1": 0.7349449225472804,
+  "micro_precision": 0.5936744728727394,
+  "micro_recall": 0.8582530120481928,
+  "micro_f1": 0.7018572343465195,
+  "macro_accuracy": 0.9616233354470513,
+  "macro_f1": 0.7003113658167285,
+  "primary_top1_accuracy": 0.7146987951807229,
+  "loss_ce": 0.6762024787702033,
+  "loss_pos_bce": 0.14565106714261386,
+  "loss_noise": 0.033040806390345095,
+  "loss_group_ce": 0.36653518099210386,
+  "loss_sparsity": 0.0,
+  "loss_total": 0.7998129995161863
+}

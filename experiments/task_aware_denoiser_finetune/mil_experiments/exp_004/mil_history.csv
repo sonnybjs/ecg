@@ -1,0 +1,2 @@
+epoch,train_loss,train_softmax_accuracy,train_softmax_macro_f1,val_loss,val_softmax_accuracy,val_softmax_macro_f1,val_contains_true_rate,val_priority_primary_accuracy,val_candidate_macro_f1,val_avg_predicted_labels
+1,3.4378848605685763,0.08333333333333333,0.04035087719298246,3.3826510906219482,0.16666666666666666,0.13157894736842105,0.9444444444444444,0.05555555555555555,0.0941828254847645,18.833333333333332

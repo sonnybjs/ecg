@@ -13,11 +13,18 @@ venv/
 .pycache_compile/
 
 # Experiment outputs and model weights
-experiments/
+experiments/*
+!experiments/task_aware_denoiser_finetune/
+experiments/task_aware_denoiser_finetune/*
 *.ckpt
 *.pt
 *.pth
 *.onnx
+!experiments/task_aware_denoiser_finetune/
+!experiments/task_aware_denoiser_finetune/mil_experiments/
+!experiments/task_aware_denoiser_finetune/mil_experiments/**
+!experiments/task_aware_denoiser_finetune/mil_evaluations/
+!experiments/task_aware_denoiser_finetune/mil_evaluations/**
 
 # Local data and external model folders
 Ecgdata/

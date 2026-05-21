@@ -1,0 +1,51 @@
+{
+  "checkpoint": "/Users/Sonny/Research/W\uff5cECFGClassifier/experiments/task_aware_denoiser_finetune/mil_experiments/exp_006/checkpoints/step_00072000.ckpt",
+  "evaluated_bags": 760,
+  "softmax_top1_accuracy": 0.6960526315789474,
+  "softmax_macro_f1": 0.6802462060743686,
+  "best_macro_f1": {
+    "threshold": 0.95,
+    "noise_threshold": 0.5,
+    "contains_true_rate": 0.8118421052631579,
+    "sample_precision": 0.42846491228070116,
+    "sample_recall": 0.8118421052631579,
+    "sample_f1": 0.529906015037595,
+    "micro_precision": 0.3570601851851852,
+    "micro_recall": 0.8118421052631579,
+    "micro_f1": 0.4959807073954984,
+    "macro_accuracy": 0.913157894736842,
+    "macro_f1": 0.5465037193894247,
+    "priority_primary_accuracy": 0.5210526315789473,
+    "average_predicted_labels": 2.2736842105263158
+  },
+  "best_sample_f1": {
+    "threshold": 0.95,
+    "noise_threshold": 0.5,
+    "contains_true_rate": 0.8118421052631579,
+    "sample_precision": 0.42846491228070116,
+    "sample_recall": 0.8118421052631579,
+    "sample_f1": 0.529906015037595,
+    "micro_precision": 0.3570601851851852,
+    "micro_recall": 0.8118421052631579,
+    "micro_f1": 0.4959807073954984,
+    "macro_accuracy": 0.913157894736842,
+    "macro_f1": 0.5465037193894247,
+    "priority_primary_accuracy": 0.5210526315789473,
+    "average_predicted_labels": 2.2736842105263158
+  },
+  "best_balanced_target_2_labels": {
+    "threshold": 0.95,
+    "noise_threshold": 0.5,
+    "contains_true_rate": 0.8118421052631579,
+    "sample_precision": 0.42846491228070116,
+    "sample_recall": 0.8118421052631579,
+    "sample_f1": 0.529906015037595,
+    "micro_precision": 0.3570601851851852,
+    "micro_recall": 0.8118421052631579,
+    "micro_f1": 0.4959807073954984,
+    "macro_accuracy": 0.913157894736842,
+    "macro_f1": 0.5465037193894247,
+    "priority_primary_accuracy": 0.5210526315789473,
+    "average_predicted_labels": 2.2736842105263158
+  }
+}

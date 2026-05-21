@@ -1,0 +1,101 @@
+{
+  "exp_dir": "/Users/Sonny/Research/W\uff5cECFGClassifier/experiments/task_aware_denoiser_finetune/mil_experiments/exp_001",
+  "device": "cpu",
+  "config": {
+    "days": [
+      "2025-07-13"
+    ],
+    "seed": 42,
+    "classifier_strategy": "lightweight_pytorch_baseline",
+    "classifier_head": "single",
+    "classifier_input": "raw",
+    "classifier_only": true,
+    "mapping_preset": "raw19_identity",
+    "mapping_description": "Use all 19 Ecgdata folder types as direct training classes.",
+    "class_order": [
+      "21AvB",
+      "AF",
+      "AtCou",
+      "AtRun",
+      "ComHB",
+      "EctAR",
+      "EctAt",
+      "EctVe",
+      "Idiov",
+      "JuRhy",
+      "Noise",
+      "PaRhy",
+      "Pause",
+      "SArrh",
+      "SRhy",
+      "SVT",
+      "VT",
+      "VeCou",
+      "Wenck"
+    ],
+    "max_files_per_class": 3,
+    "val_fraction": 0.1,
+    "test_fraction": 0.1,
+    "classifier_epochs": 1,
+    "denoiser_epochs": 0,
+    "batch_size": 2,
+    "num_workers": 0,
+    "file_batch_sampler": false,
+    "log_every_batches": 10,
+    "checkpoint_every_batches": 1000,
+    "validation_max_batches": 38,
+    "test_max_batches": 38,
+    "learning_rate_classifier": 0.0001,
+    "learning_rate_denoiser": 0.0,
+    "lambda_anchor": 0.0,
+    "lambda_slope": 0.0,
+    "lambda_noise": 0.0,
+    "noise_class_name": "Noise",
+    "noise_threshold": 0.9,
+    "diagnosis_confidence_threshold": 0.7,
+    "window_sec": 10,
+    "input_fs": 250,
+    "denoiser_fs": 360,
+    "init_classifier_path": "/Users/Sonny/Research/W\uff5cECFGClassifier/experiments/task_aware_denoiser_finetune/exp_018/classifier_stage1_best.pt",
+    "init_denoiser_path": null
+  }
+}
+[manifest] class=21AvB selected=3 train=1 val=1 test=1
+[manifest] class=AF selected=3 train=1 val=1 test=1
+[manifest] class=AtCou selected=3 train=1 val=1 test=1
+[manifest] class=AtRun selected=3 train=1 val=1 test=1
+[manifest] class=ComHB selected=3 train=1 val=1 test=1
+[manifest] class=EctAR selected=3 train=1 val=1 test=1
+[manifest] class=EctAt selected=3 train=1 val=1 test=1
+[manifest] class=EctVe selected=3 train=1 val=1 test=1
+[manifest] class=Idiov selected=3 train=1 val=1 test=1
+[manifest] class=JuRhy selected=3 train=1 val=1 test=1
+[manifest] class=Noise selected=3 train=1 val=1 test=1
+[manifest] class=PaRhy selected=3 train=1 val=1 test=1
+[manifest] class=Pause selected=3 train=1 val=1 test=1
+[manifest] class=SArrh selected=3 train=1 val=1 test=1
+[manifest] class=SRhy selected=3 train=1 val=1 test=1
+[manifest] class=SVT selected=3 train=1 val=1 test=1
+[manifest] class=VT selected=3 train=1 val=1 test=1
+[manifest] class=VeCou selected=3 train=1 val=1 test=1
+[manifest] class=Wenck selected=3 train=1 val=1 test=1
+[manifest] total_files=57 total_windows=456
+[train] files=19 class_counts={"21AvB": 1, "AF": 1, "AtCou": 1, "AtRun": 1, "ComHB": 1, "EctAR": 1, "EctAt": 1, "EctVe": 1, "Idiov": 1, "JuRhy": 1, "Noise": 1, "PaRhy": 1, "Pause": 1, "SArrh": 1, "SRhy": 1, "SVT": 1, "VT": 1, "VeCou": 1, "Wenck": 1}
+[val] files=19/19 class_counts={"21AvB": 1, "AF": 1, "AtCou": 1, "AtRun": 1, "ComHB": 1, "EctAR": 1, "EctAt": 1, "EctVe": 1, "Idiov": 1, "JuRhy": 1, "Noise": 1, "PaRhy": 1, "Pause": 1, "SArrh": 1, "SRhy": 1, "SVT": 1, "VT": 1, "VeCou": 1, "Wenck": 1}
+[test] files=19/19 class_counts={"21AvB": 1, "AF": 1, "AtCou": 1, "AtRun": 1, "ComHB": 1, "EctAR": 1, "EctAt": 1, "EctVe": 1, "Idiov": 1, "JuRhy": 1, "Noise": 1, "PaRhy": 1, "Pause": 1, "SArrh": 1, "SRhy": 1, "SVT": 1, "VT": 1, "VeCou": 1, "Wenck": 1}
+[init] fine-tune warm start from classifier_stage1_best.pt loaded 30 tensors; skipped 8 mismatched tensors
+[mil][epoch 1/1][batch 1/10] bags=2 loss=2.8754
+[mil][epoch 1/1][batch 5/10] bags=10 loss=2.9878
+[mil][epoch 1/1][batch 10/10] bags=19 loss=3.0449
+[mil][epoch 1][val][batch 1/10] bags=2
+[mil][epoch 1][val][batch 5/10] bags=10
+[mil][epoch 1][val][batch 10/10] bags=19
+[mil][epoch 1/1] train_loss=2.9505 train_f1=0.0053 val_loss=2.9760 val_f1=0.0058
+[mil][test][batch 1/10] bags=2
+[mil][test][batch 5/10] bags=10
+[mil][test][batch 10/10] bags=19
+{
+  "exp_dir": "/Users/Sonny/Research/W\uff5cECFGClassifier/experiments/task_aware_denoiser_finetune/mil_experiments/exp_001",
+  "best_val_macro_f1": 0.005847953216374269,
+  "test_macro_f1": 0.005847953216374269
+}

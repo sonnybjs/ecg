@@ -1,0 +1,12 @@
+{
+  "loss": 0.7082148886361752,
+  "accuracy": 0.7884939759036145,
+  "macro_f1": 0.7877683221318657,
+  "evaluated_batches": 4150,
+  "evaluated_bags": 16600,
+  "checkpoint": "/Users/Sonny/Research/W\uff5cECFGClassifier/experiments/task_aware_denoiser_finetune/mil_experiments/exp_002/checkpoints/last.ckpt",
+  "checkpoint_epoch": 2,
+  "checkpoint_global_step": 265586,
+  "eval_dir": "/Users/Sonny/Research/W\uff5cECFGClassifier/experiments/task_aware_denoiser_finetune/mil_evaluations/detailed_mil_eval_002",
+  "split": "val"
+}

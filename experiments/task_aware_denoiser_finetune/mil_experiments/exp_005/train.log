@@ -1,0 +1,127 @@
+{
+  "exp_dir": "/Users/Sonny/Research/W\uff5cECFGClassifier/experiments/task_aware_denoiser_finetune/mil_experiments/exp_005",
+  "device": "cpu",
+  "config": {
+    "days": [
+      "2025-07-01"
+    ],
+    "seed": 42,
+    "classifier_strategy": "pretrained_cnn_bilstm",
+    "classifier_head": "single",
+    "classifier_input": "raw",
+    "classifier_only": true,
+    "mapping_preset": "raw19_identity",
+    "mapping_description": "Use all 19 Ecgdata folder types as direct training classes.",
+    "class_order": [
+      "21AvB",
+      "AF",
+      "AtCou",
+      "AtRun",
+      "ComHB",
+      "EctAR",
+      "EctAt",
+      "EctVe",
+      "Idiov",
+      "JuRhy",
+      "Noise",
+      "PaRhy",
+      "Pause",
+      "SArrh",
+      "SRhy",
+      "SVT",
+      "VT",
+      "VeCou",
+      "Wenck"
+    ],
+    "max_files_per_class": 4,
+    "val_fraction": 0.1,
+    "test_fraction": 0.1,
+    "classifier_epochs": 1,
+    "denoiser_epochs": 0,
+    "batch_size": 2,
+    "num_workers": 0,
+    "file_batch_sampler": false,
+    "log_every_batches": 4,
+    "checkpoint_every_batches": 0,
+    "validation_max_batches": 20,
+    "test_max_batches": 20,
+    "learning_rate_classifier": 0.0001,
+    "learning_rate_denoiser": 0.0,
+    "lambda_anchor": 0.0,
+    "lambda_slope": 0.0,
+    "lambda_noise": 0.0,
+    "noise_class_name": "Noise",
+    "noise_threshold": 0.9,
+    "diagnosis_confidence_threshold": 0.7,
+    "window_sec": 10,
+    "input_fs": 250,
+    "denoiser_fs": 360,
+    "init_classifier_path": "/Users/Sonny/Research/W\uff5cECFGClassifier/experiments/task_aware_denoiser_finetune/mil_experiments/exp_002/checkpoints/last.ckpt",
+    "init_denoiser_path": null
+  }
+}
+[manifest] class=21AvB selected=4 train=2 val=1 test=1
+[manifest] class=AF selected=4 train=2 val=1 test=1
+[manifest] class=AtCou selected=4 train=2 val=1 test=1
+[manifest] class=AtRun selected=4 train=2 val=1 test=1
+[manifest] class=ComHB selected=4 train=2 val=1 test=1
+[manifest] class=EctAR selected=4 train=2 val=1 test=1
+[manifest] class=EctAt selected=4 train=2 val=1 test=1
+[manifest] class=EctVe selected=4 train=2 val=1 test=1
+[manifest] class=Idiov selected=4 train=2 val=1 test=1
+[manifest] class=JuRhy selected=4 train=2 val=1 test=1
+[manifest] class=Noise selected=4 train=2 val=1 test=1
+[manifest] class=PaRhy candidates=0 skipped
+[manifest] class=Pause selected=4 train=2 val=1 test=1
+[manifest] class=SArrh selected=4 train=2 val=1 test=1
+[manifest] class=SRhy selected=4 train=2 val=1 test=1
+[manifest] class=SVT selected=4 train=2 val=1 test=1
+[manifest] class=VT selected=4 train=2 val=1 test=1
+[manifest] class=VeCou selected=4 train=2 val=1 test=1
+[manifest] class=Wenck selected=4 train=2 val=1 test=1
+[manifest] total_files=72 total_windows=575
+[train] files=36 class_counts={"21AvB": 2, "AF": 2, "AtCou": 2, "AtRun": 2, "ComHB": 2, "EctAR": 2, "EctAt": 2, "EctVe": 2, "Idiov": 2, "JuRhy": 2, "Noise": 2, "PaRhy": 0, "Pause": 2, "SArrh": 2, "SRhy": 2, "SVT": 2, "VT": 2, "VeCou": 2, "Wenck": 2}
+[val] files=18/18 class_counts={"21AvB": 1, "AF": 1, "AtCou": 1, "AtRun": 1, "ComHB": 1, "EctAR": 1, "EctAt": 1, "EctVe": 1, "Idiov": 1, "JuRhy": 1, "Noise": 1, "PaRhy": 0, "Pause": 1, "SArrh": 1, "SRhy": 1, "SVT": 1, "VT": 1, "VeCou": 1, "Wenck": 1}
+[test] files=18/18 class_counts={"21AvB": 1, "AF": 1, "AtCou": 1, "AtRun": 1, "ComHB": 1, "EctAR": 1, "EctAt": 1, "EctVe": 1, "Idiov": 1, "JuRhy": 1, "Noise": 1, "PaRhy": 0, "Pause": 1, "SArrh": 1, "SRhy": 1, "SVT": 1, "VT": 1, "VeCou": 1, "Wenck": 1}
+[init] pretrained_cnn_bilstm from best_model.pt loaded 41 tensors; skipped 2 mismatched tensors
+[init] detection window encoder from last.ckpt loaded 43 tensors; skipped 0 mismatched tensors
+[detection_mil][epoch 1/1][batch 1/18] bags=2 loss=3.6673 running_loss=3.6673 ce=2.8820 pos_bce=0.5778 group_ce=2.3555 noise=0.7045
+[detection_mil][epoch 1/1][batch 2/18] bags=4 loss=3.2653 running_loss=3.4663 ce=2.8561 pos_bce=0.5934 group_ce=1.8084 noise=0.3523
+[detection_mil][epoch 1/1][batch 4/18] bags=8 loss=3.4413 running_loss=3.5543 ce=2.9357 pos_bce=0.6617 group_ce=1.7513 noise=0.3492
+[detection_mil][step 8][val][batch 1/9] bags=2
+[detection_mil][step 8][val][batch 2/9] bags=4
+[detection_mil][step 8][val][batch 4/9] bags=8
+[detection_mil][step 8][val][batch 6/9] bags=12
+[detection_mil][step 8][val][batch 8/9] bags=16
+[detection_mil][step 8][val][batch 9/9] bags=18
+[detection_mil][step 8] val_macro_f1=0.0942 best=-1.0000 improved=True
+[detection_mil][epoch 1/1][batch 6/18] bags=12 loss=3.4940 running_loss=3.5179 ce=2.9503 pos_bce=0.6687 group_ce=1.6023 noise=0.2328
+[detection_mil][epoch 1/1][batch 8/18] bags=16 loss=3.4429 running_loss=3.5077 ce=2.9525 pos_bce=0.6687 group_ce=1.5983 noise=0.1746
+[detection_mil][step 16][val][batch 1/9] bags=2
+[detection_mil][step 16][val][batch 2/9] bags=4
+[detection_mil][step 16][val][batch 4/9] bags=8
+[detection_mil][step 16][val][batch 6/9] bags=12
+[detection_mil][step 16][val][batch 8/9] bags=16
+[detection_mil][step 16][val][batch 9/9] bags=18
+[detection_mil][step 16] val_macro_f1=0.0942 best=0.0942 improved=False
+[detection_mil][epoch 1/1][batch 10/18] bags=20 loss=3.4486 running_loss=3.5021 ce=2.9567 pos_bce=0.6695 group_ce=1.5833 noise=0.1397
+[detection_mil][epoch 1/1][batch 12/18] bags=24 loss=3.4128 running_loss=3.4904 ce=2.9500 pos_bce=0.6665 group_ce=1.5858 noise=0.1164
+[detection_mil][step 24][val][batch 1/9] bags=2
+[detection_mil][step 24][val][batch 2/9] bags=4
+[detection_mil][step 24][val][batch 4/9] bags=8
+[detection_mil][step 24][val][batch 6/9] bags=12
+[detection_mil][step 24][val][batch 8/9] bags=16
+[detection_mil][step 24][val][batch 9/9] bags=18
+[detection_mil][step 24] val_macro_f1=0.0942 best=0.0942 improved=False
+[detection_mil] early stopping after 2 validation checks without improvement on macro_f1
+[detection_mil][test][batch 1/9] bags=2
+[detection_mil][test][batch 2/9] bags=4
+[detection_mil][test][batch 4/9] bags=8
+[detection_mil][test][batch 6/9] bags=12
+[detection_mil][test][batch 8/9] bags=16
+[detection_mil][test][batch 9/9] bags=18
+{
+  "exp_dir": "/Users/Sonny/Research/W\uff5cECFGClassifier/experiments/task_aware_denoiser_finetune/mil_experiments/exp_005",
+  "best_val_candidate_macro_f1": 0.0941828254847645,
+  "test_candidate_macro_f1": 0.10295475530932591
+}

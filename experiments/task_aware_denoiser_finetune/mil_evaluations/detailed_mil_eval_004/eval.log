@@ -1,0 +1,76 @@
+{
+  "eval_dir": "/Users/Sonny/Research/W\uff5cECFGClassifier/experiments/task_aware_denoiser_finetune/mil_evaluations/detailed_mil_eval_004",
+  "checkpoint": "/Users/Sonny/Research/W\uff5cECFGClassifier/experiments/task_aware_denoiser_finetune/mil_experiments/exp_003/checkpoints/last.ckpt",
+  "checkpoint_epoch": 1,
+  "checkpoint_global_step": 398379,
+  "device": "mps",
+  "split": "val",
+  "mapping_preset": "raw19_identity",
+  "bag_batch_size": 4,
+  "max_bags": 760,
+  "topk_fraction": 0.25,
+  "min_topk": 1,
+  "class_order": [
+    "21AvB",
+    "AF",
+    "AtCou",
+    "AtRun",
+    "ComHB",
+    "EctAR",
+    "EctAt",
+    "EctVe",
+    "Idiov",
+    "JuRhy",
+    "Noise",
+    "PaRhy",
+    "Pause",
+    "SArrh",
+    "SRhy",
+    "SVT",
+    "VT",
+    "VeCou",
+    "Wenck"
+  ]
+}
+[manifest] resolving 20 day folders
+[manifest] class=21AvB selected=7696 train=6156 val=770 test=770
+[manifest] class=AF selected=9997 train=7997 val=1000 test=1000
+[manifest] class=AtCou selected=9993 train=7995 val=999 test=999
+[manifest] class=AtRun selected=9998 train=7998 val=1000 test=1000
+[manifest] class=ComHB selected=3427 train=2741 val=343 test=343
+[manifest] class=EctAR selected=9325 train=7461 val=932 test=932
+[manifest] class=EctAt selected=9998 train=7998 val=1000 test=1000
+[manifest] class=EctVe selected=9998 train=7998 val=1000 test=1000
+[manifest] class=Idiov selected=458 train=366 val=46 test=46
+[manifest] class=JuRhy selected=9443 train=7555 val=944 test=944
+[manifest] class=Noise selected=19299 train=15439 val=1930 test=1930
+[manifest] class=PaRhy selected=3121 train=2497 val=312 test=312
+[manifest] class=Pause selected=8173 train=6539 val=817 test=817
+[manifest] class=SArrh selected=10000 train=8000 val=1000 test=1000
+[manifest] class=SRhy selected=9997 train=7997 val=1000 test=1000
+[manifest] class=SVT selected=9674 train=7740 val=967 test=967
+[manifest] class=VT selected=5402 train=4322 val=540 test=540
+[manifest] class=VeCou selected=9997 train=7997 val=1000 test=1000
+[manifest] class=Wenck selected=9997 train=7997 val=1000 test=1000
+[manifest] total_files=165993 total_windows=1330782
+[val] using class-balanced subset bags=760/16600 max_bags=760
+[val] subset_class_counts={"21AvB": 40, "AF": 40, "AtCou": 40, "AtRun": 40, "ComHB": 40, "EctAR": 40, "EctAt": 40, "EctVe": 40, "Idiov": 40, "JuRhy": 40, "Noise": 40, "PaRhy": 40, "Pause": 40, "SArrh": 40, "SRhy": 40, "SVT": 40, "VT": 40, "VeCou": 40, "Wenck": 40}
+[init] pretrained_cnn_bilstm from best_model.pt loaded 41 tensors; skipped 2 mismatched tensors
+[val][batch 1/190] bags=4
+[val][batch 50/190] bags=200
+[val][batch 100/190] bags=400
+[val][batch 150/190] bags=600
+[val][batch 190/190] bags=760
+{
+  "loss": 1.6476109650182096,
+  "accuracy": 0.5986842105263158,
+  "macro_f1": 0.5867852547786166,
+  "evaluated_batches": 190,
+  "evaluated_bags": 760,
+  "checkpoint": "/Users/Sonny/Research/W\uff5cECFGClassifier/experiments/task_aware_denoiser_finetune/mil_experiments/exp_003/checkpoints/last.ckpt",
+  "checkpoint_epoch": 1,
+  "checkpoint_global_step": 398379,
+  "eval_dir": "/Users/Sonny/Research/W\uff5cECFGClassifier/experiments/task_aware_denoiser_finetune/mil_evaluations/detailed_mil_eval_004",
+  "split": "val"
+}
+[done] wrote detailed outputs to /Users/Sonny/Research/W｜ECFGClassifier/experiments/task_aware_denoiser_finetune/mil_evaluations/detailed_mil_eval_004

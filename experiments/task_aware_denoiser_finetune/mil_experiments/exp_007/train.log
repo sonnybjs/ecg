@@ -1,0 +1,255 @@
+{
+  "exp_dir": "/Users/Sonny/Research/W\uff5cECFGClassifier/experiments/task_aware_denoiser_finetune/mil_experiments/exp_007",
+  "device": "mps",
+  "config": {
+    "days": [
+      "2025-07-01",
+      "2025-07-02",
+      "2025-07-03",
+      "2025-07-04",
+      "2025-07-05",
+      "2025-07-06",
+      "2025-07-07",
+      "2025-07-08",
+      "2025-07-09",
+      "2025-07-10",
+      "2025-07-11",
+      "2025-07-12",
+      "2025-07-13",
+      "2025-07-14",
+      "2025-07-15",
+      "2025-07-16",
+      "2025-07-17",
+      "2025-07-18",
+      "2025-07-19",
+      "2025-07-20"
+    ],
+    "seed": 42,
+    "classifier_strategy": "pretrained_cnn_bilstm",
+    "classifier_head": "single",
+    "classifier_input": "raw",
+    "classifier_only": true,
+    "mapping_preset": "raw19_identity",
+    "mapping_description": "Use all 19 Ecgdata folder types as direct training classes.",
+    "class_order": [
+      "21AvB",
+      "AF",
+      "AtCou",
+      "AtRun",
+      "ComHB",
+      "EctAR",
+      "EctAt",
+      "EctVe",
+      "Idiov",
+      "JuRhy",
+      "Noise",
+      "PaRhy",
+      "Pause",
+      "SArrh",
+      "SRhy",
+      "SVT",
+      "VT",
+      "VeCou",
+      "Wenck"
+    ],
+    "max_files_per_class": 0,
+    "val_fraction": 0.1,
+    "test_fraction": 0.1,
+    "classifier_epochs": 1,
+    "denoiser_epochs": 0,
+    "batch_size": 4,
+    "num_workers": 0,
+    "file_batch_sampler": false,
+    "log_every_batches": 200,
+    "checkpoint_every_batches": 4000,
+    "validation_max_batches": 760,
+    "test_max_batches": 760,
+    "learning_rate_classifier": 3e-05,
+    "learning_rate_denoiser": 0.0,
+    "lambda_anchor": 0.0,
+    "lambda_slope": 0.0,
+    "lambda_noise": 0.0,
+    "noise_class_name": "Noise",
+    "noise_threshold": 0.9,
+    "diagnosis_confidence_threshold": 0.7,
+    "window_sec": 10,
+    "input_fs": 250,
+    "denoiser_fs": 360,
+    "init_classifier_path": "/Users/Sonny/Research/W\uff5cECFGClassifier/experiments/task_aware_denoiser_finetune/mil_experiments/exp_006/checkpoints/step_00072000.ckpt",
+    "init_denoiser_path": null
+  }
+}
+[manifest] class=21AvB selected=7696 train=6156 val=770 test=770
+[manifest] class=AF selected=9997 train=7997 val=1000 test=1000
+[manifest] class=AtCou selected=9993 train=7995 val=999 test=999
+[manifest] class=AtRun selected=9998 train=7998 val=1000 test=1000
+[manifest] class=ComHB selected=3427 train=2741 val=343 test=343
+[manifest] class=EctAR selected=9325 train=7461 val=932 test=932
+[manifest] class=EctAt selected=9998 train=7998 val=1000 test=1000
+[manifest] class=EctVe selected=9998 train=7998 val=1000 test=1000
+[manifest] class=Idiov selected=458 train=366 val=46 test=46
+[manifest] class=JuRhy selected=9443 train=7555 val=944 test=944
+[manifest] class=Noise selected=19299 train=15439 val=1930 test=1930
+[manifest] class=PaRhy selected=3121 train=2497 val=312 test=312
+[manifest] class=Pause selected=8173 train=6539 val=817 test=817
+[manifest] class=SArrh selected=10000 train=8000 val=1000 test=1000
+[manifest] class=SRhy selected=9997 train=7997 val=1000 test=1000
+[manifest] class=SVT selected=9674 train=7740 val=967 test=967
+[manifest] class=VT selected=5402 train=4322 val=540 test=540
+[manifest] class=VeCou selected=9997 train=7997 val=1000 test=1000
+[manifest] class=Wenck selected=9997 train=7997 val=1000 test=1000
+[manifest] total_files=165993 total_windows=1330782
+[train] files=132793 class_counts={"21AvB": 6156, "AF": 7997, "AtCou": 7995, "AtRun": 7998, "ComHB": 2741, "EctAR": 7461, "EctAt": 7998, "EctVe": 7998, "Idiov": 366, "JuRhy": 7555, "Noise": 15439, "PaRhy": 2497, "Pause": 6539, "SArrh": 8000, "SRhy": 7997, "SVT": 7740, "VT": 4322, "VeCou": 7997, "Wenck": 7997}
+[val] files=760/16600 class_counts={"21AvB": 40, "AF": 40, "AtCou": 40, "AtRun": 40, "ComHB": 40, "EctAR": 40, "EctAt": 40, "EctVe": 40, "Idiov": 40, "JuRhy": 40, "Noise": 40, "PaRhy": 40, "Pause": 40, "SArrh": 40, "SRhy": 40, "SVT": 40, "VT": 40, "VeCou": 40, "Wenck": 40}
+[test] files=760/16600 class_counts={"21AvB": 40, "AF": 40, "AtCou": 40, "AtRun": 40, "ComHB": 40, "EctAR": 40, "EctAt": 40, "EctVe": 40, "Idiov": 40, "JuRhy": 40, "Noise": 40, "PaRhy": 40, "Pause": 40, "SArrh": 40, "SRhy": 40, "SVT": 40, "VT": 40, "VeCou": 40, "Wenck": 40}
+[init] pretrained_cnn_bilstm from best_model.pt loaded 41 tensors; skipped 2 mismatched tensors
+[resume] loaded detection MIL model from /Users/Sonny/Research/W｜ECFGClassifier/experiments/task_aware_denoiser_finetune/mil_experiments/exp_006/checkpoints/step_00072000.ckpt missing_keys=0 unexpected_keys=0
+[resume] loaded optimizer state
+[resume] starting global_step=72000 prior_score=-1.0
+[detection_mil][epoch 1/1][batch 1/33199] bags=4 loss=0.6105 running_loss=0.6105 ce=0.5395 pos_bce=0.0076 group_ce=0.3434 noise=0.0000
+[detection_mil][epoch 1/1][batch 50/33199] bags=200 loss=0.7523 running_loss=0.9640 ce=0.8683 pos_bce=0.0392 group_ce=0.4109 noise=0.0089
+[detection_mil][epoch 1/1][batch 100/33199] bags=400 loss=1.3609 running_loss=0.9322 ce=0.8380 pos_bce=0.0399 group_ce=0.3999 noise=0.0113
+[detection_mil][epoch 1/1][batch 150/33199] bags=600 loss=0.9980 running_loss=0.9331 ce=0.8339 pos_bce=0.0364 group_ce=0.4191 noise=0.0220
+[detection_mil][epoch 1/1][batch 200/33199] bags=800 loss=0.6534 running_loss=0.9182 ce=0.8217 pos_bce=0.0374 group_ce=0.4089 noise=0.0174
+[detection_mil][epoch 1/1][batch 250/33199] bags=1000 loss=0.0909 running_loss=0.8960 ce=0.8013 pos_bce=0.0364 group_ce=0.4021 noise=0.0168
+[detection_mil][epoch 1/1][batch 300/33199] bags=1200 loss=0.7664 running_loss=0.9074 ce=0.8119 pos_bce=0.0370 group_ce=0.4074 noise=0.0148
+[detection_mil][epoch 1/1][batch 350/33199] bags=1400 loss=1.1731 running_loss=0.9247 ce=0.8248 pos_bce=0.0399 group_ce=0.4245 noise=0.0151
+[detection_mil][epoch 1/1][batch 400/33199] bags=1600 loss=0.6203 running_loss=0.9324 ce=0.8321 pos_bce=0.0413 group_ce=0.4244 noise=0.0150
+[detection_mil][epoch 1/1][batch 450/33199] bags=1800 loss=0.9426 running_loss=0.9355 ce=0.8348 pos_bce=0.0425 group_ce=0.4252 noise=0.0144
+[detection_mil][epoch 1/1][batch 500/33199] bags=2000 loss=0.1461 running_loss=0.9213 ce=0.8232 pos_bce=0.0413 group_ce=0.4152 noise=0.0135
+[detection_mil][epoch 1/1][batch 550/33199] bags=2200 loss=0.7730 running_loss=0.9215 ce=0.8218 pos_bce=0.0425 group_ce=0.4189 noise=0.0155
+[detection_mil][epoch 1/1][batch 600/33199] bags=2400 loss=0.3608 running_loss=0.9214 ce=0.8217 pos_bce=0.0426 group_ce=0.4174 noise=0.0172
+[detection_mil][epoch 1/1][batch 650/33199] bags=2600 loss=1.9931 running_loss=0.9235 ce=0.8230 pos_bce=0.0420 group_ce=0.4219 noise=0.0176
+[detection_mil][epoch 1/1][batch 700/33199] bags=2800 loss=0.5156 running_loss=0.9184 ce=0.8192 pos_bce=0.0414 group_ce=0.4164 noise=0.0171
+[detection_mil][epoch 1/1][batch 750/33199] bags=3000 loss=0.6454 running_loss=0.9291 ce=0.8286 pos_bce=0.0427 group_ce=0.4209 noise=0.0177
+[detection_mil][epoch 1/1][batch 800/33199] bags=3200 loss=1.3387 running_loss=0.9287 ce=0.8292 pos_bce=0.0422 group_ce=0.4174 noise=0.0169
+[detection_mil][epoch 1/1][batch 850/33199] bags=3400 loss=0.0948 running_loss=0.9268 ce=0.8273 pos_bce=0.0419 group_ce=0.4180 noise=0.0166
+[detection_mil][epoch 1/1][batch 900/33199] bags=3600 loss=0.9788 running_loss=0.9280 ce=0.8287 pos_bce=0.0426 group_ce=0.4161 noise=0.0162
+[detection_mil][epoch 1/1][batch 950/33199] bags=3800 loss=0.5837 running_loss=0.9246 ce=0.8256 pos_bce=0.0424 group_ce=0.4155 noise=0.0160
+[detection_mil][epoch 1/1][batch 1000/33199] bags=4000 loss=0.0595 running_loss=0.9296 ce=0.8299 pos_bce=0.0437 group_ce=0.4166 noise=0.0163
+[detection_mil] saved interval checkpoint global_step=76000
+[detection_mil][epoch 1/1][batch 1050/33199] bags=4200 loss=0.7841 running_loss=0.9373 ce=0.8364 pos_bce=0.0458 group_ce=0.4200 noise=0.0160
+[detection_mil][epoch 1/1][batch 1100/33199] bags=4400 loss=1.8262 running_loss=0.9400 ce=0.8378 pos_bce=0.0462 group_ce=0.4244 noise=0.0169
+[detection_mil][epoch 1/1][batch 1150/33199] bags=4600 loss=0.5423 running_loss=0.9369 ce=0.8354 pos_bce=0.0464 group_ce=0.4217 noise=0.0166
+[detection_mil][epoch 1/1][batch 1200/33199] bags=4800 loss=0.1800 running_loss=0.9284 ce=0.8285 pos_bce=0.0455 group_ce=0.4152 noise=0.0161
+[detection_mil][epoch 1/1][batch 1250/33199] bags=5000 loss=0.6281 running_loss=0.9242 ce=0.8250 pos_bce=0.0450 group_ce=0.4128 noise=0.0159
+[detection_mil][epoch 1/1][batch 1300/33199] bags=5200 loss=1.1945 running_loss=0.9265 ce=0.8268 pos_bce=0.0451 group_ce=0.4149 noise=0.0158
+[detection_mil][epoch 1/1][batch 1350/33199] bags=5400 loss=1.0825 running_loss=0.9224 ce=0.8233 pos_bce=0.0443 group_ce=0.4134 noise=0.0157
+[detection_mil][epoch 1/1][batch 1400/33199] bags=5600 loss=0.3388 running_loss=0.9191 ce=0.8205 pos_bce=0.0441 group_ce=0.4114 noise=0.0155
+[detection_mil][epoch 1/1][batch 1450/33199] bags=5800 loss=0.2467 running_loss=0.9198 ce=0.8210 pos_bce=0.0444 group_ce=0.4122 noise=0.0154
+[detection_mil][epoch 1/1][batch 1500/33199] bags=6000 loss=0.6369 running_loss=0.9224 ce=0.8234 pos_bce=0.0443 group_ce=0.4131 noise=0.0154
+[detection_mil][epoch 1/1][batch 1550/33199] bags=6200 loss=0.6331 running_loss=0.9160 ce=0.8180 pos_bce=0.0437 group_ce=0.4093 noise=0.0154
+[detection_mil][epoch 1/1][batch 1600/33199] bags=6400 loss=0.4349 running_loss=0.9188 ce=0.8204 pos_bce=0.0434 group_ce=0.4115 noise=0.0156
+[detection_mil][epoch 1/1][batch 1650/33199] bags=6600 loss=0.3968 running_loss=0.9228 ce=0.8239 pos_bce=0.0443 group_ce=0.4131 noise=0.0153
+[detection_mil][epoch 1/1][batch 1700/33199] bags=6800 loss=0.5086 running_loss=0.9192 ce=0.8205 pos_bce=0.0437 group_ce=0.4126 noise=0.0151
+[detection_mil][epoch 1/1][batch 1750/33199] bags=7000 loss=0.4815 running_loss=0.9180 ce=0.8194 pos_bce=0.0444 group_ce=0.4114 noise=0.0150
+[detection_mil][epoch 1/1][batch 1800/33199] bags=7200 loss=0.5735 running_loss=0.9187 ce=0.8202 pos_bce=0.0443 group_ce=0.4114 noise=0.0148
+[detection_mil][epoch 1/1][batch 1850/33199] bags=7400 loss=0.1430 running_loss=0.9189 ce=0.8202 pos_bce=0.0444 group_ce=0.4122 noise=0.0147
+[detection_mil][epoch 1/1][batch 1900/33199] bags=7600 loss=1.3520 running_loss=0.9193 ce=0.8208 pos_bce=0.0443 group_ce=0.4114 noise=0.0145
+[detection_mil][epoch 1/1][batch 1950/33199] bags=7800 loss=0.3413 running_loss=0.9165 ce=0.8183 pos_bce=0.0443 group_ce=0.4098 noise=0.0142
+[detection_mil][epoch 1/1][batch 2000/33199] bags=8000 loss=0.7775 running_loss=0.9162 ce=0.8184 pos_bce=0.0440 group_ce=0.4087 noise=0.0140
+[detection_mil] saved interval checkpoint global_step=80000
+[detection_mil][step 80000][val][batch 1/190] bags=4
+[detection_mil][step 80000][val][batch 50/190] bags=200
+[detection_mil][step 80000][val][batch 100/190] bags=400
+[detection_mil][step 80000][val][batch 150/190] bags=600
+[detection_mil][step 80000][val][batch 190/190] bags=760
+[detection_mil][step 80000] val_macro_f1=0.5261 best=-1.0000 improved=True
+[detection_mil][epoch 1/1][batch 2050/33199] bags=8200 loss=0.3500 running_loss=0.9157 ce=0.8179 pos_bce=0.0438 group_ce=0.4084 noise=0.0149
+[detection_mil][epoch 1/1][batch 2100/33199] bags=8400 loss=0.8312 running_loss=0.9133 ce=0.8160 pos_bce=0.0434 group_ce=0.4066 noise=0.0147
+[detection_mil][epoch 1/1][batch 2150/33199] bags=8600 loss=0.5194 running_loss=0.9117 ce=0.8147 pos_bce=0.0432 group_ce=0.4057 noise=0.0145
+[detection_mil][epoch 1/1][batch 2200/33199] bags=8800 loss=0.0991 running_loss=0.9117 ce=0.8148 pos_bce=0.0429 group_ce=0.4056 noise=0.0144
+[detection_mil][epoch 1/1][batch 2250/33199] bags=9000 loss=0.6263 running_loss=0.9128 ce=0.8157 pos_bce=0.0433 group_ce=0.4060 noise=0.0143
+[detection_mil][epoch 1/1][batch 2300/33199] bags=9200 loss=1.2650 running_loss=0.9122 ce=0.8153 pos_bce=0.0433 group_ce=0.4053 noise=0.0144
+[detection_mil][epoch 1/1][batch 2350/33199] bags=9400 loss=0.4880 running_loss=0.9103 ce=0.8137 pos_bce=0.0431 group_ce=0.4039 noise=0.0143
+[detection_mil][epoch 1/1][batch 2400/33199] bags=9600 loss=1.2874 running_loss=0.9106 ce=0.8140 pos_bce=0.0432 group_ce=0.4039 noise=0.0142
+[detection_mil][epoch 1/1][batch 2450/33199] bags=9800 loss=1.7168 running_loss=0.9102 ce=0.8137 pos_bce=0.0433 group_ce=0.4033 noise=0.0142
+[detection_mil][epoch 1/1][batch 2500/33199] bags=10000 loss=0.0661 running_loss=0.9090 ce=0.8128 pos_bce=0.0433 group_ce=0.4016 noise=0.0142
+[detection_mil][epoch 1/1][batch 2550/33199] bags=10200 loss=0.3477 running_loss=0.9096 ce=0.8135 pos_bce=0.0432 group_ce=0.4013 noise=0.0141
+[detection_mil][epoch 1/1][batch 2600/33199] bags=10400 loss=1.1652 running_loss=0.9088 ce=0.8129 pos_bce=0.0430 group_ce=0.4012 noise=0.0140
+[detection_mil][epoch 1/1][batch 2650/33199] bags=10600 loss=1.2991 running_loss=0.9087 ce=0.8126 pos_bce=0.0430 group_ce=0.4022 noise=0.0138
+[detection_mil][epoch 1/1][batch 2700/33199] bags=10800 loss=0.1991 running_loss=0.9090 ce=0.8129 pos_bce=0.0431 group_ce=0.4022 noise=0.0137
+[detection_mil][epoch 1/1][batch 2750/33199] bags=11000 loss=1.1789 running_loss=0.9090 ce=0.8128 pos_bce=0.0431 group_ce=0.4024 noise=0.0136
+[detection_mil][epoch 1/1][batch 2800/33199] bags=11200 loss=0.8886 running_loss=0.9123 ce=0.8158 pos_bce=0.0437 group_ce=0.4030 noise=0.0138
+[detection_mil][epoch 1/1][batch 2850/33199] bags=11400 loss=1.6400 running_loss=0.9145 ce=0.8180 pos_bce=0.0437 group_ce=0.4033 noise=0.0139
+[detection_mil][epoch 1/1][batch 2900/33199] bags=11600 loss=0.9852 running_loss=0.9133 ce=0.8168 pos_bce=0.0435 group_ce=0.4032 noise=0.0138
+[detection_mil][epoch 1/1][batch 2950/33199] bags=11800 loss=1.3636 running_loss=0.9119 ce=0.8156 pos_bce=0.0433 group_ce=0.4027 noise=0.0138
+[detection_mil][epoch 1/1][batch 3000/33199] bags=12000 loss=1.0485 running_loss=0.9126 ce=0.8163 pos_bce=0.0431 group_ce=0.4031 noise=0.0138
+[detection_mil] saved interval checkpoint global_step=84000
+[detection_mil][epoch 1/1][batch 3050/33199] bags=12200 loss=0.6409 running_loss=0.9149 ce=0.8183 pos_bce=0.0433 group_ce=0.4042 noise=0.0137
+[detection_mil][epoch 1/1][batch 3100/33199] bags=12400 loss=0.6405 running_loss=0.9157 ce=0.8191 pos_bce=0.0431 group_ce=0.4049 noise=0.0136
+[detection_mil][epoch 1/1][batch 3150/33199] bags=12600 loss=1.5298 running_loss=0.9157 ce=0.8192 pos_bce=0.0434 group_ce=0.4041 noise=0.0134
+[detection_mil][epoch 1/1][batch 3200/33199] bags=12800 loss=1.8301 running_loss=0.9167 ce=0.8201 pos_bce=0.0433 group_ce=0.4046 noise=0.0136
+[detection_mil][epoch 1/1][batch 3250/33199] bags=13000 loss=1.8862 running_loss=0.9181 ce=0.8213 pos_bce=0.0433 group_ce=0.4051 noise=0.0137
+[detection_mil][epoch 1/1][batch 3300/33199] bags=13200 loss=0.4758 running_loss=0.9169 ce=0.8202 pos_bce=0.0431 group_ce=0.4045 noise=0.0139
+[detection_mil][epoch 1/1][batch 3350/33199] bags=13400 loss=0.7991 running_loss=0.9164 ce=0.8201 pos_bce=0.0429 group_ce=0.4033 noise=0.0139
+[detection_mil][epoch 1/1][batch 3400/33199] bags=13600 loss=0.1281 running_loss=0.9171 ce=0.8208 pos_bce=0.0428 group_ce=0.4037 noise=0.0139
+[detection_mil][epoch 1/1][batch 3450/33199] bags=13800 loss=0.9364 running_loss=0.9165 ce=0.8203 pos_bce=0.0429 group_ce=0.4029 noise=0.0137
+[detection_mil][epoch 1/1][batch 3500/33199] bags=14000 loss=0.6415 running_loss=0.9172 ce=0.8210 pos_bce=0.0427 group_ce=0.4031 noise=0.0137
+[detection_mil][epoch 1/1][batch 3550/33199] bags=14200 loss=0.7306 running_loss=0.9172 ce=0.8209 pos_bce=0.0427 group_ce=0.4036 noise=0.0137
+[detection_mil][epoch 1/1][batch 3600/33199] bags=14400 loss=2.3975 running_loss=0.9193 ce=0.8228 pos_bce=0.0429 group_ce=0.4046 noise=0.0137
+[detection_mil][epoch 1/1][batch 3650/33199] bags=14600 loss=0.2442 running_loss=0.9182 ce=0.8217 pos_bce=0.0428 group_ce=0.4047 noise=0.0136
+[detection_mil][epoch 1/1][batch 3700/33199] bags=14800 loss=0.2475 running_loss=0.9162 ce=0.8201 pos_bce=0.0426 group_ce=0.4031 noise=0.0134
+[detection_mil][epoch 1/1][batch 3750/33199] bags=15000 loss=0.4592 running_loss=0.9181 ce=0.8217 pos_bce=0.0430 group_ce=0.4042 noise=0.0134
+[detection_mil][epoch 1/1][batch 3800/33199] bags=15200 loss=0.7570 running_loss=0.9175 ce=0.8212 pos_bce=0.0429 group_ce=0.4038 noise=0.0133
+[detection_mil][epoch 1/1][batch 3850/33199] bags=15400 loss=0.4820 running_loss=0.9184 ce=0.8220 pos_bce=0.0430 group_ce=0.4042 noise=0.0132
+[detection_mil][epoch 1/1][batch 3900/33199] bags=15600 loss=0.7928 running_loss=0.9174 ce=0.8211 pos_bce=0.0430 group_ce=0.4041 noise=0.0132
+[detection_mil][epoch 1/1][batch 3950/33199] bags=15800 loss=0.1993 running_loss=0.9177 ce=0.8212 pos_bce=0.0430 group_ce=0.4046 noise=0.0133
+[detection_mil][epoch 1/1][batch 4000/33199] bags=16000 loss=0.6725 running_loss=0.9172 ce=0.8207 pos_bce=0.0430 group_ce=0.4045 noise=0.0134
+[detection_mil] saved interval checkpoint global_step=88000
+[detection_mil][step 88000][val][batch 1/190] bags=4
+[detection_mil][step 88000][val][batch 50/190] bags=200
+[detection_mil][step 88000][val][batch 100/190] bags=400
+[detection_mil][step 88000][val][batch 150/190] bags=600
+[detection_mil][step 88000][val][batch 190/190] bags=760
+[detection_mil][step 88000] val_macro_f1=0.0113 best=0.5261 improved=False
+[detection_mil][epoch 1/1][batch 4050/33199] bags=16200 loss=0.6863 running_loss=0.9178 ce=0.8212 pos_bce=0.0430 group_ce=0.4050 noise=0.0133
+[detection_mil][epoch 1/1][batch 4100/33199] bags=16400 loss=1.7855 running_loss=0.9187 ce=0.8220 pos_bce=0.0430 group_ce=0.4054 noise=0.0132
+[detection_mil][epoch 1/1][batch 4150/33199] bags=16600 loss=0.4496 running_loss=0.9169 ce=0.8206 pos_bce=0.0429 group_ce=0.4046 noise=0.0131
+[detection_mil][epoch 1/1][batch 4200/33199] bags=16800 loss=1.0414 running_loss=0.9167 ce=0.8203 pos_bce=0.0429 group_ce=0.4045 noise=0.0132
+[detection_mil][epoch 1/1][batch 4250/33199] bags=17000 loss=0.5240 running_loss=0.9152 ce=0.8190 pos_bce=0.0427 group_ce=0.4037 noise=0.0132
+[detection_mil][epoch 1/1][batch 4300/33199] bags=17200 loss=0.3988 running_loss=0.9144 ce=0.8183 pos_bce=0.0426 group_ce=0.4035 noise=0.0132
+[detection_mil][epoch 1/1][batch 4350/33199] bags=17400 loss=1.2074 running_loss=0.9150 ce=0.8189 pos_bce=0.0427 group_ce=0.4035 noise=0.0133
+[detection_mil][epoch 1/1][batch 4400/33199] bags=17600 loss=0.3740 running_loss=0.9167 ce=0.8203 pos_bce=0.0430 group_ce=0.4042 noise=0.0132
+[detection_mil][epoch 1/1][batch 4450/33199] bags=17800 loss=0.5254 running_loss=0.9172 ce=0.8207 pos_bce=0.0430 group_ce=0.4047 noise=0.0133
+[detection_mil][epoch 1/1][batch 4500/33199] bags=18000 loss=3.1065 running_loss=0.9172 ce=0.8206 pos_bce=0.0432 group_ce=0.4050 noise=0.0136
+[detection_mil][epoch 1/1][batch 4550/33199] bags=18200 loss=0.6108 running_loss=0.9168 ce=0.8202 pos_bce=0.0431 group_ce=0.4050 noise=0.0136
+[detection_mil][epoch 1/1][batch 4600/33199] bags=18400 loss=0.5731 running_loss=0.9175 ce=0.8207 pos_bce=0.0431 group_ce=0.4056 noise=0.0135
+[detection_mil][epoch 1/1][batch 4650/33199] bags=18600 loss=0.2107 running_loss=0.9166 ce=0.8199 pos_bce=0.0430 group_ce=0.4054 noise=0.0135
+[detection_mil][epoch 1/1][batch 4700/33199] bags=18800 loss=0.2162 running_loss=0.9147 ce=0.8181 pos_bce=0.0429 group_ce=0.4049 noise=0.0135
+[detection_mil][epoch 1/1][batch 4750/33199] bags=19000 loss=0.2633 running_loss=0.9160 ce=0.8193 pos_bce=0.0432 group_ce=0.4053 noise=0.0134
+[detection_mil][epoch 1/1][batch 4800/33199] bags=19200 loss=0.5538 running_loss=0.9151 ce=0.8185 pos_bce=0.0432 group_ce=0.4046 noise=0.0133
+[detection_mil][epoch 1/1][batch 4850/33199] bags=19400 loss=1.0541 running_loss=0.9142 ce=0.8179 pos_bce=0.0431 group_ce=0.4038 noise=0.0132
+[detection_mil][epoch 1/1][batch 4900/33199] bags=19600 loss=1.4920 running_loss=0.9149 ce=0.8184 pos_bce=0.0431 group_ce=0.4044 noise=0.0133
+[detection_mil][epoch 1/1][batch 4950/33199] bags=19800 loss=1.0108 running_loss=0.9156 ce=0.8190 pos_bce=0.0432 group_ce=0.4048 noise=0.0134
+[detection_mil][epoch 1/1][batch 5000/33199] bags=20000 loss=0.5109 running_loss=0.9136 ce=0.8172 pos_bce=0.0430 group_ce=0.4045 noise=0.0134
+[detection_mil] saved interval checkpoint global_step=92000
+[detection_mil][epoch 1/1][batch 5050/33199] bags=20200 loss=1.0948 running_loss=0.9132 ce=0.8168 pos_bce=0.0429 group_ce=0.4042 noise=0.0134
+[detection_mil][epoch 1/1][batch 5100/33199] bags=20400 loss=0.4332 running_loss=0.9119 ce=0.8156 pos_bce=0.0427 group_ce=0.4041 noise=0.0136
+[detection_mil][epoch 1/1][batch 5150/33199] bags=20600 loss=1.4295 running_loss=0.9112 ce=0.8151 pos_bce=0.0426 group_ce=0.4035 noise=0.0135
+[detection_mil][epoch 1/1][batch 5200/33199] bags=20800 loss=0.4286 running_loss=0.9099 ce=0.8139 pos_bce=0.0425 group_ce=0.4028 noise=0.0134
+[detection_mil][epoch 1/1][batch 5250/33199] bags=21000 loss=0.6431 running_loss=0.9104 ce=0.8144 pos_bce=0.0424 group_ce=0.4029 noise=0.0133
+[detection_mil][epoch 1/1][batch 5300/33199] bags=21200 loss=1.1950 running_loss=0.9101 ce=0.8142 pos_bce=0.0424 group_ce=0.4026 noise=0.0133
+[detection_mil][epoch 1/1][batch 5350/33199] bags=21400 loss=1.6744 running_loss=0.9092 ce=0.8134 pos_bce=0.0423 group_ce=0.4022 noise=0.0132
+[detection_mil][epoch 1/1][batch 5400/33199] bags=21600 loss=0.3731 running_loss=0.9095 ce=0.8137 pos_bce=0.0423 group_ce=0.4024 noise=0.0133
+[detection_mil][epoch 1/1][batch 5450/33199] bags=21800 loss=1.0870 running_loss=0.9088 ce=0.8131 pos_bce=0.0423 group_ce=0.4021 noise=0.0132
+[detection_mil][epoch 1/1][batch 5500/33199] bags=22000 loss=3.0736 running_loss=0.9089 ce=0.8132 pos_bce=0.0423 group_ce=0.4019 noise=0.0134
+[detection_mil][epoch 1/1][batch 5550/33199] bags=22200 loss=0.5166 running_loss=0.9088 ce=0.8130 pos_bce=0.0423 group_ce=0.4018 noise=0.0135
+[detection_mil][epoch 1/1][batch 5600/33199] bags=22400 loss=1.0151 running_loss=0.9090 ce=0.8133 pos_bce=0.0422 group_ce=0.4019 noise=0.0134
+[detection_mil][epoch 1/1][batch 5650/33199] bags=22600 loss=0.7165 running_loss=0.9089 ce=0.8132 pos_bce=0.0423 group_ce=0.4015 noise=0.0134
+[detection_mil][epoch 1/1][batch 5700/33199] bags=22800 loss=0.7926 running_loss=0.9097 ce=0.8139 pos_bce=0.0423 group_ce=0.4022 noise=0.0134
+[detection_mil][epoch 1/1][batch 5750/33199] bags=23000 loss=0.5336 running_loss=0.9092 ce=0.8134 pos_bce=0.0422 group_ce=0.4022 noise=0.0134
+[detection_mil][epoch 1/1][batch 5800/33199] bags=23200 loss=0.1479 running_loss=0.9100 ce=0.8141 pos_bce=0.0422 group_ce=0.4026 noise=0.0133
+[detection_mil][epoch 1/1][batch 5850/33199] bags=23400 loss=0.1289 running_loss=0.9103 ce=0.8144 pos_bce=0.0421 group_ce=0.4029 noise=0.0134
+[detection_mil][epoch 1/1][batch 5900/33199] bags=23600 loss=0.4099 running_loss=0.9110 ce=0.8149 pos_bce=0.0423 group_ce=0.4034 noise=0.0135
+[detection_mil][epoch 1/1][batch 5950/33199] bags=23800 loss=0.7885 running_loss=0.9104 ce=0.8144 pos_bce=0.0422 group_ce=0.4034 noise=0.0135
+[detection_mil][epoch 1/1][batch 6000/33199] bags=24000 loss=0.9043 running_loss=0.9108 ce=0.8147 pos_bce=0.0422 group_ce=0.4034 noise=0.0134
+[detection_mil] saved interval checkpoint global_step=96000
+[detection_mil][step 96000][val][batch 1/190] bags=4
+[detection_mil][step 96000][val][batch 50/190] bags=200
+[detection_mil][step 96000][val][batch 100/190] bags=400
+[detection_mil][step 96000][val][batch 150/190] bags=600
+[detection_mil][step 96000][val][batch 190/190] bags=760
+[detection_mil][step 96000] val_macro_f1=0.0115 best=0.5261 improved=False
+[detection_mil][epoch 1/1][batch 6050/33199] bags=24200 loss=1.7739 running_loss=0.9106 ce=0.8145 pos_bce=0.0423 group_ce=0.4038 noise=0.0134
+[detection_mil][epoch 1/1][batch 6100/33199] bags=24400 loss=2.1732 running_loss=0.9109 ce=0.8147 pos_bce=0.0425 group_ce=0.4039 noise=0.0133
