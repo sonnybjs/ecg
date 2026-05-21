@@ -1,0 +1,32 @@
+{
+  "description": "Strict mapping to the 6-class rhythm taxonomy used by rmxjck/ltaf-ecg-rhythm-classifier family. Only relatively close source labels are retained.",
+  "class_order": [
+    "NSR",
+    "AFIB",
+    "SBR",
+    "AB",
+    "SVTA",
+    "B"
+  ],
+  "class_map": {
+    "21AvB": null,
+    "AF": "AFIB",
+    "AtCou": "AB",
+    "AtRun": "SVTA",
+    "ComHB": null,
+    "EctAR": null,
+    "EctAt": null,
+    "EctVe": null,
+    "Idiov": null,
+    "JuRhy": null,
+    "Noise": null,
+    "PaRhy": null,
+    "Pause": null,
+    "SArrh": "NSR",
+    "SRhy": "NSR",
+    "SVT": "SVTA",
+    "VT": null,
+    "VeCou": "B",
+    "Wenck": null
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "description": "Pseudo-mapping of Ecgdata folder types into the 3-class beat taxonomy used by rmxjck/ltaf-ecg-beats-classifier-htf. This is only for broad branch alignment and should not be treated as beat-level ground truth.",
+  "class_order": [
+    "N",
+    "A",
+    "V"
+  ],
+  "class_map": {
+    "21AvB": null,
+    "AF": "A",
+    "AtCou": "A",
+    "AtRun": "A",
+    "ComHB": null,
+    "EctAR": "A",
+    "EctAt": "A",
+    "EctVe": "V",
+    "Idiov": "V",
+    "JuRhy": "N",
+    "Noise": null,
+    "PaRhy": "N",
+    "Pause": null,
+    "SArrh": "N",
+    "SRhy": "N",
+    "SVT": "A",
+    "VT": "V",
+    "VeCou": "V",
+    "Wenck": null
+  }
+}

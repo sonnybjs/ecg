@@ -1,0 +1,29 @@
+# Python/runtime caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Local plotting/font caches
+.mplconfig/
+.pycache/
+.pycache_compile/
+
+# Experiment outputs and model weights
+experiments/
+*.ckpt
+*.pt
+*.pth
+*.onnx
+
+# Local data and external model folders
+Ecgdata/
+external_models/
+
+# OS/editor noise
+.DS_Store
+.idea/
+.vscode/
