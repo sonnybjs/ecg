@@ -1,0 +1,152 @@
+[manifest] resolving 20 day folders
+[manifest] class=21AvB selected=7696 train=6156 val=770 test=770
+[manifest] class=AF selected=9997 train=7997 val=1000 test=1000
+[manifest] class=AtCou selected=9993 train=7995 val=999 test=999
+[manifest] class=AtRun selected=9998 train=7998 val=1000 test=1000
+[manifest] class=ComHB selected=3427 train=2741 val=343 test=343
+[manifest] class=EctAR selected=9325 train=7461 val=932 test=932
+[manifest] class=EctAt selected=9998 train=7998 val=1000 test=1000
+[manifest] class=EctVe selected=9998 train=7998 val=1000 test=1000
+[manifest] class=Idiov selected=458 train=366 val=46 test=46
+[manifest] class=JuRhy selected=9443 train=7555 val=944 test=944
+[manifest] class=Noise selected=19299 train=15439 val=1930 test=1930
+[manifest] class=PaRhy selected=3121 train=2497 val=312 test=312
+[manifest] class=Pause selected=8173 train=6539 val=817 test=817
+[manifest] class=SArrh selected=10000 train=8000 val=1000 test=1000
+[manifest] class=SRhy selected=9997 train=7997 val=1000 test=1000
+[manifest] class=SVT selected=9674 train=7740 val=967 test=967
+[manifest] class=VT selected=5402 train=4322 val=540 test=540
+[manifest] class=VeCou selected=9997 train=7997 val=1000 test=1000
+[manifest] class=Wenck selected=9997 train=7997 val=1000 test=1000
+[manifest] total_files=165993 total_windows=1330782
+{
+  "exp_dir": "/Users/Sonny/Research/W\uff5cECFGClassifier/experiments/task_aware_denoiser_finetune/exp_008",
+  "device": "cpu",
+  "train_windows": 1064590,
+  "val_windows": 133093,
+  "test_windows": 133099,
+  "mapping_preset": "raw19_identity",
+  "classifier_input": "raw",
+  "classifier_only": true,
+  "class_order": [
+    "21AvB",
+    "AF",
+    "AtCou",
+    "AtRun",
+    "ComHB",
+    "EctAR",
+    "EctAt",
+    "EctVe",
+    "Idiov",
+    "JuRhy",
+    "Noise",
+    "PaRhy",
+    "Pause",
+    "SArrh",
+    "SRhy",
+    "SVT",
+    "VT",
+    "VeCou",
+    "Wenck"
+  ]
+}
+[init] pretrained_cnn_bilstm from best_model.pt loaded 41 tensors; skipped 2 mismatched tensors
+[init] fine-tune warm start from best_state_dict.pt loaded 41 tensors; skipped 2 mismatched tensors
+[stage1][epoch 1/20][batch 1/16635] loss=3.2583
+[stage1][epoch 1/20][batch 100/16635] loss=2.4127
+[stage1][epoch 1/20][batch 200/16635] loss=1.9297
+[stage1][epoch 1/20][batch 300/16635] loss=1.7509
+[stage1][epoch 1/20][batch 400/16635] loss=1.6058
+[stage1][epoch 1/20][batch 500/16635] loss=1.6385
+[stage1][epoch 1/20][batch 600/16635] loss=1.5025
+[stage1][epoch 1/20][batch 700/16635] loss=1.1853
+[stage1][epoch 1/20][batch 800/16635] loss=1.6557
+[stage1][epoch 1/20][batch 900/16635] loss=1.5571
+[stage1][epoch 1/20][batch 1000/16635] loss=1.7490
+[stage1][epoch 1/20][batch 1100/16635] loss=1.3242
+[stage1][epoch 1/20][batch 1200/16635] loss=1.3499
+[stage1][epoch 1/20][batch 1300/16635] loss=1.5542
+[stage1][epoch 1/20][batch 1400/16635] loss=1.3250
+[stage1][epoch 1/20][batch 1500/16635] loss=1.1926
+[stage1][epoch 1/20][batch 1600/16635] loss=1.1748
+[stage1][epoch 1/20][batch 1700/16635] loss=1.3209
+[stage1][epoch 1/20][batch 1800/16635] loss=1.2822
+[stage1][epoch 1/20][batch 1900/16635] loss=1.3687
+[stage1][epoch 1/20][batch 2000/16635] loss=1.5156
+[stage1][epoch 1/20][batch 2100/16635] loss=1.1066
+[stage1][epoch 1/20][batch 2200/16635] loss=1.0030
+[stage1][epoch 1/20][batch 2300/16635] loss=0.8731
+[stage1][epoch 1/20][batch 2400/16635] loss=1.1932
+[stage1][epoch 1/20][batch 2500/16635] loss=1.3158
+[stage1][epoch 1/20][batch 2600/16635] loss=1.3287
+[stage1][epoch 1/20][batch 2700/16635] loss=0.9833
+[stage1][epoch 1/20][batch 2800/16635] loss=1.2616
+[stage1][epoch 1/20][batch 2900/16635] loss=1.2087
+[stage1][epoch 1/20][batch 3000/16635] loss=1.2783
+[stage1][epoch 1/20][batch 3100/16635] loss=1.2490
+[stage1][epoch 1/20][batch 3200/16635] loss=0.9965
+[stage1][epoch 1/20][batch 3300/16635] loss=1.2414
+[stage1][epoch 1/20][batch 3400/16635] loss=1.0530
+[stage1][epoch 1/20][batch 3500/16635] loss=1.0923
+[stage1][epoch 1/20][batch 3600/16635] loss=1.3243
+[stage1][epoch 1/20][batch 3700/16635] loss=1.0430
+[stage1][epoch 1/20][batch 3800/16635] loss=0.9368
+[stage1][epoch 1/20][batch 3900/16635] loss=1.0956
+[stage1][epoch 1/20][batch 4000/16635] loss=0.9966
+[stage1][epoch 1/20][batch 4100/16635] loss=1.2391
+[stage1][epoch 1/20][batch 4200/16635] loss=1.1966
+[stage1][epoch 1/20][batch 4300/16635] loss=1.4609
+[stage1][epoch 1/20][batch 4400/16635] loss=1.3026
+[stage1][epoch 1/20][batch 4500/16635] loss=0.8350
+[stage1][epoch 1/20][batch 4600/16635] loss=0.8509
+[stage1][epoch 1/20][batch 4700/16635] loss=1.3430
+[stage1][epoch 1/20][batch 4800/16635] loss=1.1073
+[stage1][epoch 1/20][batch 4900/16635] loss=1.0192
+[stage1][epoch 1/20][batch 5000/16635] loss=1.0222
+[stage1][epoch 1/20][batch 5100/16635] loss=1.0504
+[stage1][epoch 1/20][batch 5200/16635] loss=1.2513
+[stage1][epoch 1/20][batch 5300/16635] loss=1.1378
+[stage1][epoch 1/20][batch 5400/16635] loss=1.0390
+[stage1][epoch 1/20][batch 5500/16635] loss=1.0135
+[stage1][epoch 1/20][batch 5600/16635] loss=1.0615
+[stage1][epoch 1/20][batch 5700/16635] loss=0.9670
+[stage1][epoch 1/20][batch 5800/16635] loss=1.1540
+[stage1][epoch 1/20][batch 5900/16635] loss=1.2732
+[stage1][epoch 1/20][batch 6000/16635] loss=1.0041
+[stage1][epoch 1/20][batch 6100/16635] loss=1.3558
+[stage1][epoch 1/20][batch 6200/16635] loss=1.1167
+[stage1][epoch 1/20][batch 6300/16635] loss=0.9737
+[stage1][epoch 1/20][batch 6400/16635] loss=0.7426
+[stage1][epoch 1/20][batch 6500/16635] loss=1.9617
+[stage1][epoch 1/20][batch 6600/16635] loss=0.8273
+[stage1][epoch 1/20][batch 6700/16635] loss=1.1278
+[stage1][epoch 1/20][batch 6800/16635] loss=0.7225
+[stage1][epoch 1/20][batch 6900/16635] loss=1.2105
+[stage1][epoch 1/20][batch 7000/16635] loss=1.0559
+[stage1][epoch 1/20][batch 7100/16635] loss=1.0134
+[stage1][epoch 1/20][batch 7200/16635] loss=0.9988
+[stage1][epoch 1/20][batch 7300/16635] loss=1.0280
+[stage1][epoch 1/20][batch 7400/16635] loss=0.9888
+[stage1][epoch 1/20][batch 7500/16635] loss=1.0136
+[stage1][epoch 1/20][batch 7600/16635] loss=0.6797
+[stage1][epoch 1/20][batch 7700/16635] loss=1.0761
+[stage1][epoch 1/20][batch 7800/16635] loss=0.9313
+[stage1][epoch 1/20][batch 7900/16635] loss=0.8908
+[stage1][epoch 1/20][batch 8000/16635] loss=0.8699
+[stage1][epoch 1/20][batch 8100/16635] loss=1.1749
+[stage1][epoch 1/20][batch 8200/16635] loss=2.3763
+[stage1][epoch 1/20][batch 8300/16635] loss=0.9770
+[stage1][epoch 1/20][batch 8400/16635] loss=0.7025
+[stage1][epoch 1/20][batch 8500/16635] loss=1.3640
+[stage1][epoch 1/20][batch 8600/16635] loss=1.0606
+[stage1][epoch 1/20][batch 8700/16635] loss=0.7023
+[stage1][epoch 1/20][batch 8800/16635] loss=0.6350
+[stage1][epoch 1/20][batch 8900/16635] loss=0.7147
+[stage1][epoch 1/20][batch 9000/16635] loss=0.6871
+[stage1][epoch 1/20][batch 9100/16635] loss=1.2760
+[stage1][epoch 1/20][batch 9200/16635] loss=1.1238
+[stage1][epoch 1/20][batch 9300/16635] loss=0.7826
+[stage1][epoch 1/20][batch 9400/16635] loss=1.1523
+[stage1][epoch 1/20][batch 9500/16635] loss=1.2155
+[stage1][epoch 1/20][batch 9600/16635] loss=1.1250
+[stage1][epoch 1/20][batch 9700/16635] loss=1.2774

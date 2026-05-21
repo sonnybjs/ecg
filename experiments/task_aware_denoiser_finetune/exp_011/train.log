@@ -1,0 +1,54 @@
+[manifest] resolving 1 day folders
+[manifest] class=NSR selected=3 train=1 val=1 test=1
+[manifest] class=AFIB selected=3 train=1 val=1 test=1
+[manifest] class=SBR selected=3 train=1 val=1 test=1
+[manifest] class=AB selected=3 train=1 val=1 test=1
+[manifest] class=SVTA selected=3 train=1 val=1 test=1
+[manifest] class=B selected=3 train=1 val=1 test=1
+[manifest] total_files=18 total_windows=144
+{
+  "exp_dir": "/Users/Sonny/Research/W\uff5cECFGClassifier/experiments/task_aware_denoiser_finetune/exp_011",
+  "device": "cpu",
+  "train_windows": 48,
+  "val_windows": 48,
+  "test_windows": 48,
+  "mapping_preset": "rmxjck_rhythm6_loose",
+  "classifier_input": "raw",
+  "classifier_only": true,
+  "batch_size": 4,
+  "num_workers": 0,
+  "file_batch_sampler": true,
+  "checkpoint_every_batches": 4000,
+  "class_order": [
+    "NSR",
+    "AFIB",
+    "SBR",
+    "AB",
+    "SVTA",
+    "B"
+  ]
+}
+[stage1][epoch 1/1][batch 1/12] loss=1.8524
+[stage1][epoch 1/1][batch 6/12] loss=1.8772
+[stage1][epoch 1/1][batch 12/12] loss=1.8785
+[stage1][epoch 1/1] train_loss=1.8924 train_f1=0.0208 val_loss=1.7934 val_f1=0.0485
+[stage1][epoch 1/1] val_class_accuracy={"AB": 0.0, "AFIB": 0.0, "B": 1.0, "NSR": 0.0, "SBR": 0.0, "SVTA": 0.0}
+{
+  "exp_dir": "/Users/Sonny/Research/W\uff5cECFGClassifier/experiments/task_aware_denoiser_finetune/exp_011",
+  "device": "cpu",
+  "train_windows": 48,
+  "val_windows": 48,
+  "test_windows": 48,
+  "stage1_val_accuracy": 0.16666666666666666,
+  "stage1_val_macro_f1": 0.048484848484848485,
+  "stage1_val_per_class_accuracy": {
+    "NSR": 0.0,
+    "AFIB": 0.0,
+    "SBR": 0.0,
+    "AB": 0.0,
+    "SVTA": 0.0,
+    "B": 1.0
+  },
+  "stage1_test_accuracy": 0.1875,
+  "stage1_test_macro_f1": 0.08641975308641976
+}

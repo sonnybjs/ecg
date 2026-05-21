@@ -25,6 +25,30 @@ experiments/task_aware_denoiser_finetune/*
 !experiments/task_aware_denoiser_finetune/mil_experiments/**
 !experiments/task_aware_denoiser_finetune/mil_evaluations/
 !experiments/task_aware_denoiser_finetune/mil_evaluations/**
+!experiments/task_aware_denoiser_finetune/evaluations/
+!experiments/task_aware_denoiser_finetune/evaluations/**
+!experiments/task_aware_denoiser_finetune/exp_005/
+!experiments/task_aware_denoiser_finetune/exp_005/**
+!experiments/task_aware_denoiser_finetune/exp_009/
+!experiments/task_aware_denoiser_finetune/exp_009/**
+!experiments/task_aware_denoiser_finetune/exp_010/
+!experiments/task_aware_denoiser_finetune/exp_010/**
+!experiments/task_aware_denoiser_finetune/exp_011/
+!experiments/task_aware_denoiser_finetune/exp_011/**
+!experiments/task_aware_denoiser_finetune/exp_012/
+!experiments/task_aware_denoiser_finetune/exp_012/**
+!experiments/task_aware_denoiser_finetune/exp_015/
+!experiments/task_aware_denoiser_finetune/exp_015/**
+!experiments/task_aware_denoiser_finetune/exp_017/
+!experiments/task_aware_denoiser_finetune/exp_017/**
+!experiments/task_aware_denoiser_finetune/exp_018/
+!experiments/task_aware_denoiser_finetune/exp_018/**
+!experiments/task_aware_denoiser_finetune/exp_008/train.log
+!experiments/task_aware_denoiser_finetune/exp_013/train.log
+!experiments/task_aware_denoiser_finetune/exp_014/train.log
+!experiments/task_aware_denoiser_finetune/exp_016/train.log
+!experiments/task_aware_denoiser_finetune/_run_logs/
+!experiments/task_aware_denoiser_finetune/_run_logs/exp010_2epoch.out
 
 # Local data and external model folders
 Ecgdata/

@@ -1,0 +1,8 @@
+{
+  "loss": 0.9940312097966671,
+  "accuracy": 0.6880859375,
+  "macro_f1": 0.6634054501014838,
+  "evaluated_batches": 400,
+  "evaluated_samples": 25600,
+  "eval_dir": "/Users/Sonny/Research/W\uff5cECFGClassifier/experiments/task_aware_denoiser_finetune/evaluations/detailed_eval_001"
+}

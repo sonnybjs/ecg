@@ -1,0 +1,68 @@
+{
+  "eval_dir": "/Users/Sonny/Research/W\uff5cECFGClassifier/experiments/task_aware_denoiser_finetune/evaluations/eval_001",
+  "checkpoint": "/Users/Sonny/Research/W\uff5cECFGClassifier/experiments/task_aware_denoiser_finetune/exp_015/checkpoints/stage1/step_00004000.ckpt",
+  "device": "cpu",
+  "split": "val",
+  "mapping_preset": "raw19_identity",
+  "batch_size": 64,
+  "max_batches": 200,
+  "class_order": [
+    "21AvB",
+    "AF",
+    "AtCou",
+    "AtRun",
+    "ComHB",
+    "EctAR",
+    "EctAt",
+    "EctVe",
+    "Idiov",
+    "JuRhy",
+    "Noise",
+    "PaRhy",
+    "Pause",
+    "SArrh",
+    "SRhy",
+    "SVT",
+    "VT",
+    "VeCou",
+    "Wenck"
+  ]
+}
+[manifest] resolving 20 day folders
+[manifest] class=21AvB selected=7696 train=6156 val=770 test=770
+[manifest] class=AF selected=9997 train=7997 val=1000 test=1000
+[manifest] class=AtCou selected=9993 train=7995 val=999 test=999
+[manifest] class=AtRun selected=9998 train=7998 val=1000 test=1000
+[manifest] class=ComHB selected=3427 train=2741 val=343 test=343
+[manifest] class=EctAR selected=9325 train=7461 val=932 test=932
+[manifest] class=EctAt selected=9998 train=7998 val=1000 test=1000
+[manifest] class=EctVe selected=9998 train=7998 val=1000 test=1000
+[manifest] class=Idiov selected=458 train=366 val=46 test=46
+[manifest] class=JuRhy selected=9443 train=7555 val=944 test=944
+[manifest] class=Noise selected=19299 train=15439 val=1930 test=1930
+[manifest] class=PaRhy selected=3121 train=2497 val=312 test=312
+[manifest] class=Pause selected=8173 train=6539 val=817 test=817
+[manifest] class=SArrh selected=10000 train=8000 val=1000 test=1000
+[manifest] class=SRhy selected=9997 train=7997 val=1000 test=1000
+[manifest] class=SVT selected=9674 train=7740 val=967 test=967
+[manifest] class=VT selected=5402 train=4322 val=540 test=540
+[manifest] class=VeCou selected=9997 train=7997 val=1000 test=1000
+[manifest] class=Wenck selected=9997 train=7997 val=1000 test=1000
+[manifest] total_files=165993 total_windows=1330782
+[val] using class-balanced subset windows=12800/133093 max_batches=200
+[val] subset_class_counts={"21AvB": 691, "AF": 691, "AtCou": 691, "AtRun": 691, "ComHB": 691, "EctAR": 691, "EctAt": 691, "EctVe": 691, "Idiov": 368, "JuRhy": 691, "Noise": 691, "PaRhy": 691, "Pause": 691, "SArrh": 690, "SRhy": 690, "SVT": 690, "VT": 690, "VeCou": 690, "Wenck": 690}
+[init] pretrained_cnn_bilstm from best_model.pt loaded 41 tensors; skipped 2 mismatched tensors
+[init] fine-tune warm start from step_00004000.ckpt loaded 43 tensors; skipped 0 mismatched tensors
+[val][batch 1/200] samples=64
+[val][batch 50/200] samples=3200
+[val][batch 100/200] samples=6400
+[val][batch 150/200] samples=9600
+[val][batch 200/200] samples=12800
+{
+  "loss": 7.496230564117432,
+  "accuracy": 0.05390625,
+  "macro_f1": 0.005384105185127385,
+  "evaluated_batches": 200,
+  "evaluated_samples": 12800,
+  "eval_dir": "/Users/Sonny/Research/W\uff5cECFGClassifier/experiments/task_aware_denoiser_finetune/evaluations/eval_001"
+}

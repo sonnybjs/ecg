@@ -1,0 +1,73 @@
+[manifest] resolving 1 day folders
+[manifest] class=NSR selected=3 train=1 val=1 test=1
+[manifest] class=AFIB selected=3 train=1 val=1 test=1
+[manifest] class=SBR selected=3 train=1 val=1 test=1
+[manifest] class=AB selected=3 train=1 val=1 test=1
+[manifest] class=SVTA selected=3 train=1 val=1 test=1
+[manifest] class=B selected=3 train=1 val=1 test=1
+[manifest] total_files=18 total_windows=144
+{
+  "exp_dir": "/Users/Sonny/Research/W\uff5cECFGClassifier/experiments/task_aware_denoiser_finetune/exp_009",
+  "device": "cpu",
+  "train_windows": 48,
+  "val_windows": 48,
+  "test_windows": 48,
+  "mapping_preset": "rmxjck_rhythm6_loose",
+  "classifier_input": "raw",
+  "classifier_only": false,
+  "batch_size": 4,
+  "num_workers": 0,
+  "file_batch_sampler": true,
+  "checkpoint_every_batches": 2,
+  "class_order": [
+    "NSR",
+    "AFIB",
+    "SBR",
+    "AB",
+    "SVTA",
+    "B"
+  ]
+}
+[stage1][epoch 1/1][batch 1/12] loss=1.8452
+[stage1][epoch 1/1][batch 2/12] loss=1.7424
+[stage1] saved interval checkpoint step=2 epoch=1 batch=2
+[stage1][epoch 1/1][batch 4/12] loss=1.7617
+[stage1] saved interval checkpoint step=4 epoch=1 batch=4
+[stage1][epoch 1/1][batch 6/12] loss=1.8464
+[stage1] saved interval checkpoint step=6 epoch=1 batch=6
+[stage1][epoch 1/1][batch 8/12] loss=1.9743
+[stage1] saved interval checkpoint step=8 epoch=1 batch=8
+[stage1][epoch 1/1][batch 10/12] loss=1.9591
+[stage1] saved interval checkpoint step=10 epoch=1 batch=10
+[stage1][epoch 1/1][batch 12/12] loss=1.8668
+[stage1] saved interval checkpoint step=12 epoch=1 batch=12
+[stage1][epoch 1/1] train_loss=1.8871 train_f1=0.0133 val_loss=1.7930 val_f1=0.0485
+[stage2][epoch 1/1][batch 1/12] loss=1.7314 cls=1.7314 anchor=0.000000 slope=0.000000
+[stage2][epoch 1/1][batch 2/12] loss=1.7314 cls=1.7314 anchor=0.000001 slope=0.000012
+[stage2] saved interval checkpoint step=2 epoch=1 batch=2
+[stage2][epoch 1/1][batch 4/12] loss=1.8207 cls=1.8207 anchor=0.000001 slope=0.000021
+[stage2] saved interval checkpoint step=4 epoch=1 batch=4
+[stage2][epoch 1/1][batch 6/12] loss=1.7656 cls=1.7656 anchor=0.000001 slope=0.000005
+[stage2] saved interval checkpoint step=6 epoch=1 batch=6
+[stage2][epoch 1/1][batch 8/12] loss=1.7421 cls=1.7421 anchor=0.000000 slope=0.000008
+[stage2] saved interval checkpoint step=8 epoch=1 batch=8
+[stage2][epoch 1/1][batch 10/12] loss=1.8676 cls=1.8676 anchor=0.000000 slope=0.000006
+[stage2] saved interval checkpoint step=10 epoch=1 batch=10
+[stage2][epoch 1/1][batch 12/12] loss=1.8309 cls=1.8309 anchor=0.000000 slope=0.000018
+[stage2] saved interval checkpoint step=12 epoch=1 batch=12
+[stage2][epoch 1/1] train_loss=1.7930 train_f1=0.0476 val_loss=1.7931 val_f1=0.0476
+{
+  "exp_dir": "/Users/Sonny/Research/W\uff5cECFGClassifier/experiments/task_aware_denoiser_finetune/exp_009",
+  "device": "cpu",
+  "train_windows": 48,
+  "val_windows": 48,
+  "test_windows": 48,
+  "stage1_val_accuracy": 0.16666666666666666,
+  "stage1_val_macro_f1": 0.048484848484848485,
+  "stage1_test_accuracy": 0.16666666666666666,
+  "stage1_test_macro_f1": 0.05031446540880503,
+  "stage2_val_accuracy": 0.16666666666666666,
+  "stage2_val_macro_f1": 0.047619047619047616,
+  "stage2_test_accuracy": 0.16666666666666666,
+  "stage2_test_macro_f1": 0.047619047619047616
+}

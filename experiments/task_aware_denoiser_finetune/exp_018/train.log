@@ -1,0 +1,115 @@
+[manifest] resolving 1 day folders
+[manifest] class=21AvB selected=3 train=1 val=1 test=1
+[manifest] class=AF selected=3 train=1 val=1 test=1
+[manifest] class=AtCou selected=3 train=1 val=1 test=1
+[manifest] class=AtRun selected=3 train=1 val=1 test=1
+[manifest] class=ComHB selected=3 train=1 val=1 test=1
+[manifest] class=EctAR selected=3 train=1 val=1 test=1
+[manifest] class=EctAt selected=3 train=1 val=1 test=1
+[manifest] class=EctVe selected=3 train=1 val=1 test=1
+[manifest] class=Idiov selected=3 train=1 val=1 test=1
+[manifest] class=JuRhy selected=3 train=1 val=1 test=1
+[manifest] class=Noise selected=3 train=1 val=1 test=1
+[manifest] class=PaRhy selected=3 train=1 val=1 test=1
+[manifest] class=Pause selected=3 train=1 val=1 test=1
+[manifest] class=SArrh selected=3 train=1 val=1 test=1
+[manifest] class=SRhy selected=3 train=1 val=1 test=1
+[manifest] class=SVT selected=3 train=1 val=1 test=1
+[manifest] class=VT selected=3 train=1 val=1 test=1
+[manifest] class=VeCou selected=3 train=1 val=1 test=1
+[manifest] class=Wenck selected=3 train=1 val=1 test=1
+[manifest] total_files=57 total_windows=456
+[validation] using class-balanced subset windows=20/152 max_batches=5
+[validation] subset_class_counts={"21AvB": 2, "AF": 1, "AtCou": 1, "AtRun": 1, "ComHB": 1, "EctAR": 1, "EctAt": 1, "EctVe": 1, "Idiov": 1, "JuRhy": 1, "Noise": 1, "PaRhy": 1, "Pause": 1, "SArrh": 1, "SRhy": 1, "SVT": 1, "VT": 1, "VeCou": 1, "Wenck": 1}
+[test] using class-balanced subset windows=20/152 max_batches=5
+[test] subset_class_counts={"21AvB": 2, "AF": 1, "AtCou": 1, "AtRun": 1, "ComHB": 1, "EctAR": 1, "EctAt": 1, "EctVe": 1, "Idiov": 1, "JuRhy": 1, "Noise": 1, "PaRhy": 1, "Pause": 1, "SArrh": 1, "SRhy": 1, "SVT": 1, "VT": 1, "VeCou": 1, "Wenck": 1}
+{
+  "exp_dir": "/Users/Sonny/Research/W\uff5cECFGClassifier/experiments/task_aware_denoiser_finetune/exp_018",
+  "device": "cpu",
+  "train_windows": 152,
+  "val_windows": 20,
+  "test_windows": 20,
+  "full_val_windows": 152,
+  "full_test_windows": 152,
+  "mapping_preset": "raw19_identity",
+  "classifier_input": "raw",
+  "classifier_head": "diagnosis_noise",
+  "classifier_only": true,
+  "batch_size": 4,
+  "num_workers": 0,
+  "file_batch_sampler": true,
+  "checkpoint_every_batches": 1000,
+  "validation_max_batches": 5,
+  "test_max_batches": 5,
+  "class_order": [
+    "21AvB",
+    "AF",
+    "AtCou",
+    "AtRun",
+    "ComHB",
+    "EctAR",
+    "EctAt",
+    "EctVe",
+    "Idiov",
+    "JuRhy",
+    "Noise",
+    "PaRhy",
+    "Pause",
+    "SArrh",
+    "SRhy",
+    "SVT",
+    "VT",
+    "VeCou",
+    "Wenck"
+  ]
+}
+[stage1][epoch 1/1][batch 1/38] loss=3.0882 diag=2.9526 noise=0.6781
+[stage1][epoch 1/1][batch 4/38] loss=2.9020 diag=2.7864 noise=0.5782
+[stage1][epoch 1/1][batch 8/38] loss=3.1398 diag=3.0432 noise=0.4831
+[stage1][epoch 1/1][batch 12/38] loss=3.0928 diag=3.0140 noise=0.3939
+[stage1][epoch 1/1][batch 16/38] loss=3.0833 diag=3.0231 noise=0.3011
+[stage1][epoch 1/1][batch 20/38] loss=3.0544 diag=3.0059 noise=0.2424
+[stage1][epoch 1/1][batch 24/38] loss=3.1309 diag=3.0805 noise=0.2522
+[stage1][epoch 1/1][batch 28/38] loss=3.1140 diag=3.0776 noise=0.1821
+[stage1][epoch 1/1][batch 32/38] loss=3.2327 diag=3.1904 noise=0.2117
+[stage1][epoch 1/1][batch 36/38] loss=3.0828 diag=3.0098 noise=0.3650
+[stage1][epoch 1/1][batch 38/38] loss=3.1318 diag=3.0966 noise=0.1760
+[stage1][epoch 1][validation][batch 1/5] samples=4
+[stage1][epoch 1][validation][batch 5/5] samples=20
+[stage1][epoch 1/1] train_loss=2.9352 train_f1=0.0000 val_loss=2.9610 val_f1=0.0075
+[stage1][epoch 1/1] val_class_accuracy={"21AvB": 0.0, "AF": 0.0, "AtCou": 0.0, "AtRun": 0.0, "ComHB": 0.0, "EctAR": 0.0, "EctAt": 0.0, "EctVe": 0.0, "Idiov": 0.0, "JuRhy": 0.0, "Noise": 0.0, "PaRhy": 0.0, "Pause": 1.0, "SArrh": 0.0, "SRhy": 0.0, "SVT": 0.0, "VT": 0.0, "VeCou": 0.0, "Wenck": 0.0}
+[stage1][epoch 1/1] val_diagnosis_only_acc=0.0526 val_diagnosis_only_f1=0.0079
+[stage1][test][batch 1/5] samples=4
+[stage1][test][batch 5/5] samples=20
+{
+  "exp_dir": "/Users/Sonny/Research/W\uff5cECFGClassifier/experiments/task_aware_denoiser_finetune/exp_018",
+  "device": "cpu",
+  "train_windows": 152,
+  "val_windows": 20,
+  "test_windows": 20,
+  "stage1_val_accuracy": 0.05,
+  "stage1_val_macro_f1": 0.007518796992481204,
+  "stage1_val_per_class_accuracy": {
+    "21AvB": 0.0,
+    "AF": 0.0,
+    "AtCou": 0.0,
+    "AtRun": 0.0,
+    "ComHB": 0.0,
+    "EctAR": 0.0,
+    "EctAt": 0.0,
+    "EctVe": 0.0,
+    "Idiov": 0.0,
+    "JuRhy": 0.0,
+    "Noise": 0.0,
+    "PaRhy": 0.0,
+    "Pause": 1.0,
+    "SArrh": 0.0,
+    "SRhy": 0.0,
+    "SVT": 0.0,
+    "VT": 0.0,
+    "VeCou": 0.0,
+    "Wenck": 0.0
+  },
+  "stage1_test_accuracy": 0.05,
+  "stage1_test_macro_f1": 0.006578947368421052
+}

@@ -1,0 +1,303 @@
+[manifest] resolving 20 day folders
+[manifest] class=21AvB selected=7696 train=6156 val=770 test=770
+[manifest] class=AF selected=9997 train=7997 val=1000 test=1000
+[manifest] class=AtCou selected=9993 train=7995 val=999 test=999
+[manifest] class=AtRun selected=9998 train=7998 val=1000 test=1000
+[manifest] class=ComHB selected=3427 train=2741 val=343 test=343
+[manifest] class=EctAR selected=9325 train=7461 val=932 test=932
+[manifest] class=EctAt selected=9998 train=7998 val=1000 test=1000
+[manifest] class=EctVe selected=9998 train=7998 val=1000 test=1000
+[manifest] class=Idiov selected=458 train=366 val=46 test=46
+[manifest] class=JuRhy selected=9443 train=7555 val=944 test=944
+[manifest] class=Noise selected=19299 train=15439 val=1930 test=1930
+[manifest] class=PaRhy selected=3121 train=2497 val=312 test=312
+[manifest] class=Pause selected=8173 train=6539 val=817 test=817
+[manifest] class=SArrh selected=10000 train=8000 val=1000 test=1000
+[manifest] class=SRhy selected=9997 train=7997 val=1000 test=1000
+[manifest] class=SVT selected=9674 train=7740 val=967 test=967
+[manifest] class=VT selected=5402 train=4322 val=540 test=540
+[manifest] class=VeCou selected=9997 train=7997 val=1000 test=1000
+[manifest] class=Wenck selected=9997 train=7997 val=1000 test=1000
+[manifest] total_files=165993 total_windows=1330782
+[validation] using class-balanced subset windows=12800/133093 max_batches=200
+[validation] subset_class_counts={"21AvB": 691, "AF": 691, "AtCou": 691, "AtRun": 691, "ComHB": 691, "EctAR": 691, "EctAt": 691, "EctVe": 691, "Idiov": 368, "JuRhy": 691, "Noise": 691, "PaRhy": 691, "Pause": 691, "SArrh": 690, "SRhy": 690, "SVT": 690, "VT": 690, "VeCou": 690, "Wenck": 690}
+[test] using class-balanced subset windows=12800/133099 max_batches=200
+[test] subset_class_counts={"21AvB": 691, "AF": 691, "AtCou": 691, "AtRun": 691, "ComHB": 691, "EctAR": 691, "EctAt": 691, "EctVe": 691, "Idiov": 368, "JuRhy": 691, "Noise": 691, "PaRhy": 691, "Pause": 691, "SArrh": 690, "SRhy": 690, "SVT": 690, "VT": 690, "VeCou": 690, "Wenck": 690}
+{
+  "exp_dir": "/Users/Sonny/Research/W\uff5cECFGClassifier/experiments/task_aware_denoiser_finetune/exp_017",
+  "device": "cpu",
+  "train_windows": 1064590,
+  "val_windows": 12800,
+  "test_windows": 12800,
+  "full_val_windows": 133093,
+  "full_test_windows": 133099,
+  "mapping_preset": "raw19_identity",
+  "classifier_input": "raw",
+  "classifier_only": true,
+  "batch_size": 64,
+  "num_workers": 0,
+  "file_batch_sampler": true,
+  "checkpoint_every_batches": 4000,
+  "validation_max_batches": 200,
+  "test_max_batches": 200,
+  "class_order": [
+    "21AvB",
+    "AF",
+    "AtCou",
+    "AtRun",
+    "ComHB",
+    "EctAR",
+    "EctAt",
+    "EctVe",
+    "Idiov",
+    "JuRhy",
+    "Noise",
+    "PaRhy",
+    "Pause",
+    "SArrh",
+    "SRhy",
+    "SVT",
+    "VT",
+    "VeCou",
+    "Wenck"
+  ]
+}
+[init] pretrained_cnn_bilstm from best_model.pt loaded 41 tensors; skipped 2 mismatched tensors
+[init] fine-tune warm start from step_00004000.ckpt loaded 43 tensors; skipped 0 mismatched tensors
+[stage1][epoch 1/2][batch 1/16635] loss=1.2207
+[stage1][epoch 1/2][batch 100/16635] loss=0.7830
+[stage1][epoch 1/2][batch 200/16635] loss=0.7280
+[stage1][epoch 1/2][batch 300/16635] loss=1.5777
+[stage1][epoch 1/2][batch 400/16635] loss=1.3959
+[stage1][epoch 1/2][batch 500/16635] loss=0.9163
+[stage1][epoch 1/2][batch 600/16635] loss=1.0981
+[stage1][epoch 1/2][batch 700/16635] loss=1.7494
+[stage1][epoch 1/2][batch 800/16635] loss=1.3991
+[stage1][epoch 1/2][batch 900/16635] loss=1.4224
+[stage1][epoch 1/2][batch 1000/16635] loss=2.8124
+[stage1][epoch 1/2][batch 1100/16635] loss=1.7151
+[stage1][epoch 1/2][batch 1200/16635] loss=1.1005
+[stage1][epoch 1/2][batch 1300/16635] loss=1.7459
+[stage1][epoch 1/2][batch 1400/16635] loss=0.7155
+[stage1][epoch 1/2][batch 1500/16635] loss=1.0678
+[stage1][epoch 1/2][batch 1600/16635] loss=0.9385
+[stage1][epoch 1/2][batch 1700/16635] loss=1.3144
+[stage1][epoch 1/2][batch 1800/16635] loss=1.3682
+[stage1][epoch 1/2][batch 1900/16635] loss=1.0418
+[stage1][epoch 1/2][batch 2000/16635] loss=0.8996
+[stage1][epoch 1/2][batch 2100/16635] loss=1.3158
+[stage1][epoch 1/2][batch 2200/16635] loss=1.6935
+[stage1][epoch 1/2][batch 2300/16635] loss=1.6793
+[stage1][epoch 1/2][batch 2400/16635] loss=1.5380
+[stage1][epoch 1/2][batch 2500/16635] loss=2.4224
+[stage1][epoch 1/2][batch 2600/16635] loss=1.9256
+[stage1][epoch 1/2][batch 2700/16635] loss=1.1304
+[stage1][epoch 1/2][batch 2800/16635] loss=0.8241
+[stage1][epoch 1/2][batch 2900/16635] loss=1.1801
+[stage1][epoch 1/2][batch 3000/16635] loss=2.0869
+[stage1][epoch 1/2][batch 3100/16635] loss=1.2540
+[stage1][epoch 1/2][batch 3200/16635] loss=1.3904
+[stage1][epoch 1/2][batch 3300/16635] loss=1.3920
+[stage1][epoch 1/2][batch 3400/16635] loss=1.6516
+[stage1][epoch 1/2][batch 3500/16635] loss=1.3404
+[stage1][epoch 1/2][batch 3600/16635] loss=1.4367
+[stage1][epoch 1/2][batch 3700/16635] loss=1.0110
+[stage1][epoch 1/2][batch 3800/16635] loss=0.7374
+[stage1][epoch 1/2][batch 3900/16635] loss=0.7719
+[stage1][epoch 1/2][batch 4000/16635] loss=1.1300
+[stage1] saved interval checkpoint step=4000 epoch=1 batch=4000
+[stage1][step 4000] running validation
+[stage1][step 4000][validation][batch 1/200] samples=64
+[stage1][step 4000][validation][batch 50/200] samples=3200
+[stage1][step 4000][validation][batch 100/200] samples=6400
+[stage1][step 4000][validation][batch 150/200] samples=9600
+[stage1][step 4000][validation][batch 200/200] samples=12800
+[stage1][step 4000] val_loss=9.7358 val_acc=0.0540 val_f1=0.0054
+[stage1][step 4000] val_class_accuracy={"21AvB": 0.0, "AF": 0.0, "AtCou": 0.0, "AtRun": 0.0, "ComHB": 0.0, "EctAR": 0.0, "EctAt": 0.0, "EctVe": 0.0, "Idiov": 0.0, "JuRhy": 0.0, "Noise": 1.0, "PaRhy": 0.0, "Pause": 0.0, "SArrh": 0.0, "SRhy": 0.0, "SVT": 0.0, "VT": 0.0, "VeCou": 0.0, "Wenck": 0.0}
+[stage1][epoch 1/2][batch 4100/16635] loss=2.6789
+[stage1][epoch 1/2][batch 4200/16635] loss=0.7326
+[stage1][epoch 1/2][batch 4300/16635] loss=1.0221
+[stage1][epoch 1/2][batch 4400/16635] loss=0.6592
+[stage1][epoch 1/2][batch 4500/16635] loss=0.9166
+[stage1][epoch 1/2][batch 4600/16635] loss=1.6896
+[stage1][epoch 1/2][batch 4700/16635] loss=0.6910
+[stage1][epoch 1/2][batch 4800/16635] loss=1.5833
+[stage1][epoch 1/2][batch 4900/16635] loss=0.6851
+[stage1][epoch 1/2][batch 5000/16635] loss=0.4463
+[stage1][epoch 1/2][batch 5100/16635] loss=1.3784
+[stage1][epoch 1/2][batch 5200/16635] loss=1.5861
+[stage1][epoch 1/2][batch 5300/16635] loss=0.8264
+[stage1][epoch 1/2][batch 5400/16635] loss=1.5463
+[stage1][epoch 1/2][batch 5500/16635] loss=1.6146
+[stage1][epoch 1/2][batch 5600/16635] loss=0.6919
+[stage1][epoch 1/2][batch 5700/16635] loss=0.8679
+[stage1][epoch 1/2][batch 5800/16635] loss=1.0836
+[stage1][epoch 1/2][batch 5900/16635] loss=0.9906
+[stage1][epoch 1/2][batch 6000/16635] loss=1.1513
+[stage1][epoch 1/2][batch 6100/16635] loss=0.8996
+[stage1][epoch 1/2][batch 6200/16635] loss=0.9322
+[stage1][epoch 1/2][batch 6300/16635] loss=1.2728
+[stage1][epoch 1/2][batch 6400/16635] loss=1.7955
+[stage1][epoch 1/2][batch 6500/16635] loss=1.6100
+[stage1][epoch 1/2][batch 6600/16635] loss=0.6911
+[stage1][epoch 1/2][batch 6700/16635] loss=1.7385
+[stage1][epoch 1/2][batch 6800/16635] loss=0.9492
+[stage1][epoch 1/2][batch 6900/16635] loss=0.5682
+[stage1][epoch 1/2][batch 7000/16635] loss=0.9082
+[stage1][epoch 1/2][batch 7100/16635] loss=1.0713
+[stage1][epoch 1/2][batch 7200/16635] loss=0.9992
+[stage1][epoch 1/2][batch 7300/16635] loss=1.0353
+[stage1][epoch 1/2][batch 7400/16635] loss=1.1778
+[stage1][epoch 1/2][batch 7500/16635] loss=1.7022
+[stage1][epoch 1/2][batch 7600/16635] loss=1.0714
+[stage1][epoch 1/2][batch 7700/16635] loss=0.1900
+[stage1][epoch 1/2][batch 7800/16635] loss=0.8333
+[stage1][epoch 1/2][batch 7900/16635] loss=1.1655
+[stage1][epoch 1/2][batch 8000/16635] loss=0.9861
+[stage1] saved interval checkpoint step=8000 epoch=1 batch=8000
+[stage1][step 8000] running validation
+[stage1][step 8000][validation][batch 1/200] samples=64
+[stage1][step 8000][validation][batch 50/200] samples=3200
+[stage1][step 8000][validation][batch 100/200] samples=6400
+[stage1][step 8000][validation][batch 150/200] samples=9600
+[stage1][step 8000][validation][batch 200/200] samples=12800
+[stage1][step 8000] val_loss=2.7874 val_acc=0.2620 val_f1=0.2166
+[stage1][step 8000] val_class_accuracy={"21AvB": 0.0101, "AF": 0.6975, "AtCou": 0.0825, "AtRun": 0.1968, "ComHB": 0.1795, "EctAR": 0.4515, "EctAt": 0.1954, "EctVe": 0.0318, "Idiov": 0.0, "JuRhy": 0.411, "Noise": 0.8944, "PaRhy": 0.2706, "Pause": 0.1606, "SArrh": 0.0029, "SRhy": 0.0739, "SVT": 0.6667, "VT": 0.0087, "VeCou": 0.3681, "Wenck": 0.1522}
+[stage1][epoch 1/2][batch 8100/16635] loss=1.3106
+[stage1][epoch 1/2][batch 8200/16635] loss=2.0465
+[stage1][epoch 1/2][batch 8300/16635] loss=1.2835
+[stage1][epoch 1/2][batch 8400/16635] loss=1.2535
+[stage1][epoch 1/2][batch 8500/16635] loss=1.8654
+[stage1][epoch 1/2][batch 8600/16635] loss=1.0042
+[stage1][epoch 1/2][batch 8700/16635] loss=0.7487
+[stage1][epoch 1/2][batch 8800/16635] loss=1.3649
+[stage1][epoch 1/2][batch 8900/16635] loss=1.1821
+[stage1][epoch 1/2][batch 9000/16635] loss=1.6137
+[stage1][epoch 1/2][batch 9100/16635] loss=1.1810
+[stage1][epoch 1/2][batch 9200/16635] loss=0.8527
+[stage1][epoch 1/2][batch 9300/16635] loss=1.3495
+[stage1][epoch 1/2][batch 9400/16635] loss=1.2589
+[stage1][epoch 1/2][batch 9500/16635] loss=0.5119
+[stage1][epoch 1/2][batch 9600/16635] loss=1.8407
+[stage1][epoch 1/2][batch 9700/16635] loss=0.9085
+[stage1][epoch 1/2][batch 9800/16635] loss=0.9126
+[stage1][epoch 1/2][batch 9900/16635] loss=1.0454
+[stage1][epoch 1/2][batch 10000/16635] loss=0.3766
+[stage1][epoch 1/2][batch 10100/16635] loss=2.4348
+[stage1][epoch 1/2][batch 10200/16635] loss=1.3061
+[stage1][epoch 1/2][batch 10300/16635] loss=1.0807
+[stage1][epoch 1/2][batch 10400/16635] loss=2.6258
+[stage1][epoch 1/2][batch 10500/16635] loss=0.6121
+[stage1][epoch 1/2][batch 10600/16635] loss=1.0904
+[stage1][epoch 1/2][batch 10700/16635] loss=1.0894
+[stage1][epoch 1/2][batch 10800/16635] loss=0.9659
+[stage1][epoch 1/2][batch 10900/16635] loss=0.8200
+[stage1][epoch 1/2][batch 11000/16635] loss=1.1110
+[stage1][epoch 1/2][batch 11100/16635] loss=1.2999
+[stage1][epoch 1/2][batch 11200/16635] loss=0.5860
+[stage1][epoch 1/2][batch 11300/16635] loss=0.8085
+[stage1][epoch 1/2][batch 11400/16635] loss=1.2489
+[stage1][epoch 1/2][batch 11500/16635] loss=1.6602
+[stage1][epoch 1/2][batch 11600/16635] loss=0.7649
+[stage1][epoch 1/2][batch 11700/16635] loss=1.6059
+[stage1][epoch 1/2][batch 11800/16635] loss=0.5615
+[stage1][epoch 1/2][batch 11900/16635] loss=1.1859
+[stage1][epoch 1/2][batch 12000/16635] loss=1.1898
+[stage1] saved interval checkpoint step=12000 epoch=1 batch=12000
+[stage1][step 12000] running validation
+[stage1][step 12000][validation][batch 1/200] samples=64
+[stage1][step 12000][validation][batch 50/200] samples=3200
+[stage1][step 12000][validation][batch 100/200] samples=6400
+[stage1][step 12000][validation][batch 150/200] samples=9600
+[stage1][step 12000][validation][batch 200/200] samples=12800
+[stage1][step 12000] val_loss=1.0553 val_acc=0.6753 val_f1=0.6566
+[stage1][step 12000] val_class_accuracy={"21AvB": 0.7091, "AF": 0.8842, "AtCou": 0.3965, "AtRun": 0.4906, "ComHB": 0.9638, "EctAR": 0.7091, "EctAt": 0.2938, "EctVe": 0.4834, "Idiov": 0.0924, "JuRhy": 0.8423, "Noise": 0.8394, "PaRhy": 0.9812, "Pause": 0.7395, "SArrh": 0.829, "SRhy": 0.3507, "SVT": 0.8377, "VT": 0.7232, "VeCou": 0.6072, "Wenck": 0.7855}
+[stage1][epoch 1/2][batch 12100/16635] loss=0.6625
+[stage1][epoch 1/2][batch 12200/16635] loss=0.6847
+[stage1][epoch 1/2][batch 12300/16635] loss=0.6347
+[stage1][epoch 1/2][batch 12400/16635] loss=1.1201
+[stage1][epoch 1/2][batch 12500/16635] loss=1.4265
+[stage1][epoch 1/2][batch 12600/16635] loss=1.5880
+[stage1][epoch 1/2][batch 12700/16635] loss=0.8103
+[stage1][epoch 1/2][batch 12800/16635] loss=1.2063
+[stage1][epoch 1/2][batch 12900/16635] loss=1.1754
+[stage1][epoch 1/2][batch 13000/16635] loss=1.0196
+[stage1][epoch 1/2][batch 13100/16635] loss=0.3407
+[stage1][epoch 1/2][batch 13200/16635] loss=0.9765
+[stage1][epoch 1/2][batch 13300/16635] loss=1.0337
+[stage1][epoch 1/2][batch 13400/16635] loss=1.0311
+[stage1][epoch 1/2][batch 13500/16635] loss=1.2160
+[stage1][epoch 1/2][batch 13600/16635] loss=1.1588
+[stage1][epoch 1/2][batch 13700/16635] loss=0.7980
+[stage1][epoch 1/2][batch 13800/16635] loss=0.8524
+[stage1][epoch 1/2][batch 13900/16635] loss=0.5474
+[stage1][epoch 1/2][batch 14000/16635] loss=0.5882
+[stage1][epoch 1/2][batch 14100/16635] loss=1.3280
+[stage1][epoch 1/2][batch 14200/16635] loss=0.8029
+[stage1][epoch 1/2][batch 14300/16635] loss=1.1988
+[stage1][epoch 1/2][batch 14400/16635] loss=1.2428
+[stage1][epoch 1/2][batch 14500/16635] loss=0.9634
+[stage1][epoch 1/2][batch 14600/16635] loss=0.6680
+[stage1][epoch 1/2][batch 14700/16635] loss=1.9447
+[stage1][epoch 1/2][batch 14800/16635] loss=0.9587
+[stage1][epoch 1/2][batch 14900/16635] loss=0.7966
+[stage1][epoch 1/2][batch 15000/16635] loss=0.8474
+[stage1][epoch 1/2][batch 15100/16635] loss=1.9856
+[stage1][epoch 1/2][batch 15200/16635] loss=0.5881
+[stage1][epoch 1/2][batch 15300/16635] loss=1.1358
+[stage1][epoch 1/2][batch 15400/16635] loss=0.4421
+[stage1][epoch 1/2][batch 15500/16635] loss=0.4377
+[stage1][epoch 1/2][batch 15600/16635] loss=1.0715
+[stage1][epoch 1/2][batch 15700/16635] loss=1.4190
+[stage1][epoch 1/2][batch 15800/16635] loss=0.8813
+[stage1][epoch 1/2][batch 15900/16635] loss=1.1249
+[stage1][epoch 1/2][batch 16000/16635] loss=0.6714
+[stage1] saved interval checkpoint step=16000 epoch=1 batch=16000
+[stage1][step 16000] running validation
+[stage1][step 16000][validation][batch 1/200] samples=64
+[stage1][step 16000][validation][batch 50/200] samples=3200
+[stage1][step 16000][validation][batch 100/200] samples=6400
+[stage1][step 16000][validation][batch 150/200] samples=9600
+[stage1][step 16000][validation][batch 200/200] samples=12800
+[stage1][step 16000] val_loss=0.9905 val_acc=0.6958 val_f1=0.6727
+[stage1][step 16000] val_class_accuracy={"21AvB": 0.7308, "AF": 0.8799, "AtCou": 0.4284, "AtRun": 0.3603, "ComHB": 0.9146, "EctAR": 0.7106, "EctAt": 0.479, "EctVe": 0.4674, "Idiov": 0.1223, "JuRhy": 0.8698, "Noise": 0.809, "PaRhy": 0.987, "Pause": 0.8177, "SArrh": 0.913, "SRhy": 0.371, "SVT": 0.8725, "VT": 0.7884, "VeCou": 0.5754, "Wenck": 0.8551}
+[stage1][epoch 1/2][batch 16100/16635] loss=1.5334
+[stage1][epoch 1/2][batch 16200/16635] loss=0.8953
+[stage1][epoch 1/2][batch 16300/16635] loss=0.8624
+[stage1][epoch 1/2][batch 16400/16635] loss=0.8538
+[stage1][epoch 1/2][batch 16500/16635] loss=0.9543
+[stage1][epoch 1/2][batch 16600/16635] loss=0.4518
+[stage1][epoch 1/2][batch 16635/16635] loss=1.1431
+[stage1][epoch 1][validation][batch 1/200] samples=64
+[stage1][epoch 1][validation][batch 50/200] samples=3200
+[stage1][epoch 1][validation][batch 100/200] samples=6400
+[stage1][epoch 1][validation][batch 150/200] samples=9600
+[stage1][epoch 1][validation][batch 200/200] samples=12800
+[stage1][epoch 1/2] train_loss=1.1932 train_f1=0.6162 val_loss=1.4862 val_f1=0.5238
+[stage1][epoch 1/2] val_class_accuracy={"21AvB": 0.2894, "AF": 0.686, "AtCou": 0.3922, "AtRun": 0.3329, "ComHB": 0.9233, "EctAR": 0.6454, "EctAt": 0.3285, "EctVe": 0.233, "Idiov": 0.144, "JuRhy": 0.725, "Noise": 0.8278, "PaRhy": 0.9045, "Pause": 0.4573, "SArrh": 0.3986, "SRhy": 0.3928, "SVT": 0.7797, "VT": 0.2638, "VeCou": 0.671, "Wenck": 0.5957}
+[stage1][epoch 2/2][batch 1/16635] loss=0.3881
+[stage1][epoch 2/2][batch 100/16635] loss=1.3644
+[stage1][epoch 2/2][batch 200/16635] loss=0.8255
+[stage1][epoch 2/2][batch 300/16635] loss=1.3431
+[stage1][epoch 2/2][batch 400/16635] loss=0.9001
+[stage1][epoch 2/2][batch 500/16635] loss=1.6517
+[stage1][epoch 2/2][batch 600/16635] loss=1.1572
+[stage1][epoch 2/2][batch 700/16635] loss=0.8509
+[stage1][epoch 2/2][batch 800/16635] loss=1.0703
+[stage1][epoch 2/2][batch 900/16635] loss=0.5039
+[stage1][epoch 2/2][batch 1000/16635] loss=0.7403
+[stage1][epoch 2/2][batch 1100/16635] loss=1.4785
+[stage1][epoch 2/2][batch 1200/16635] loss=1.7151
+[stage1][epoch 2/2][batch 1300/16635] loss=0.6542
+[stage1][epoch 2/2][batch 1400/16635] loss=2.0215
+[stage1][epoch 2/2][batch 1500/16635] loss=1.0786
+[stage1][epoch 2/2][batch 1600/16635] loss=0.4162
+[stage1][epoch 2/2][batch 1700/16635] loss=0.7949
+[stage1][epoch 2/2][batch 1800/16635] loss=1.5606
+[stage1][epoch 2/2][batch 1900/16635] loss=0.5600
+[stage1][epoch 2/2][batch 2000/16635] loss=0.6802
+[stage1][epoch 2/2][batch 2100/16635] loss=0.6845
+[stage1][epoch 2/2][batch 2200/16635] loss=0.6431
+[stage1][epoch 2/2][batch 2300/16635] loss=1.2718
+[stage1][epoch 2/2][batch 2400/16635] loss=1.0265
+[stage1][epoch 2/2][batch 2500/16635] loss=0.6057

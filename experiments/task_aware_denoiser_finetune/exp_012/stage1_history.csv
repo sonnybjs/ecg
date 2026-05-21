@@ -1,0 +1,2 @@
+epoch,train_loss,train_accuracy,train_macro_f1,val_loss,val_accuracy,val_macro_f1,val_NSR_accuracy,val_NSR_support,val_AFIB_accuracy,val_AFIB_support,val_SBR_accuracy,val_SBR_support,val_AB_accuracy,val_AB_support,val_SVTA_accuracy,val_SVTA_support,val_B_accuracy,val_B_support
+1,1.8889236748218536,0.08333333333333333,0.044642857142857144,1.7930111090342205,0.16666666666666666,0.048484848484848485,0.0,8,0.0,8,0.0,8,0.0,8,0.0,8,1.0,8

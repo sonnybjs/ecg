@@ -1,0 +1,40 @@
+{
+  "days": [
+    "2025-07-13",
+    "2025-07-14",
+    "2025-07-15"
+  ],
+  "seed": 42,
+  "classifier_strategy": "pretrained_cnn_bilstm",
+  "classifier_input": "raw",
+  "classifier_only": false,
+  "mapping_preset": "rmxjck_rhythm6_loose",
+  "mapping_description": "Broader mapping to the 6-class rmxjck rhythm taxonomy so more Ecgdata folder types can participate in a first pretrained-aligned experiment. This is intentionally approximate and should be treated as a staging map, not a clinical equivalence map.",
+  "class_order": [
+    "NSR",
+    "AFIB",
+    "SBR",
+    "AB",
+    "SVTA",
+    "B"
+  ],
+  "max_files_per_class": 12,
+  "val_fraction": 0.2,
+  "test_fraction": 0.1,
+  "classifier_epochs": 2,
+  "denoiser_epochs": 2,
+  "batch_size": 8,
+  "num_workers": 0,
+  "file_batch_sampler": true,
+  "log_every_batches": 20,
+  "checkpoint_every_batches": 4000,
+  "learning_rate_classifier": 0.001,
+  "learning_rate_denoiser": 2e-05,
+  "lambda_anchor": 0.25,
+  "lambda_slope": 0.05,
+  "window_sec": 10,
+  "input_fs": 250,
+  "denoiser_fs": 360,
+  "init_classifier_path": "/Users/Sonny/Research/W\uff5cECFGClassifier/experiments/task_aware_denoiser_finetune/exp_005/checkpoints/stage1/best_state_dict.pt",
+  "init_denoiser_path": null
+}

@@ -1,0 +1,38 @@
+{
+  "days": [
+    "2025-07-13"
+  ],
+  "seed": 42,
+  "classifier_strategy": "lightweight_pytorch_baseline",
+  "classifier_input": "raw",
+  "classifier_only": true,
+  "mapping_preset": "rmxjck_rhythm6_loose",
+  "mapping_description": "Broader mapping to the 6-class rmxjck rhythm taxonomy so more Ecgdata folder types can participate in a first pretrained-aligned experiment. This is intentionally approximate and should be treated as a staging map, not a clinical equivalence map.",
+  "class_order": [
+    "NSR",
+    "AFIB",
+    "SBR",
+    "AB",
+    "SVTA",
+    "B"
+  ],
+  "max_files_per_class": 3,
+  "val_fraction": 0.2,
+  "test_fraction": 0.2,
+  "classifier_epochs": 1,
+  "denoiser_epochs": 0,
+  "batch_size": 4,
+  "num_workers": 0,
+  "file_batch_sampler": true,
+  "log_every_batches": 6,
+  "checkpoint_every_batches": 2,
+  "learning_rate_classifier": 0.001,
+  "learning_rate_denoiser": 2e-05,
+  "lambda_anchor": 0.25,
+  "lambda_slope": 0.05,
+  "window_sec": 10,
+  "input_fs": 250,
+  "denoiser_fs": 360,
+  "init_classifier_path": null,
+  "init_denoiser_path": null
+}

@@ -1,0 +1,118 @@
+{
+  "exp_dir": "/Users/Sonny/Research/W\uff5cECFGClassifier/experiments/task_aware_denoiser_finetune/exp_005",
+  "device": "cpu",
+  "train_windows": 483,
+  "val_windows": 96,
+  "mapping_preset": "rmxjck_rhythm6_loose",
+  "class_order": [
+    "NSR",
+    "AFIB",
+    "SBR",
+    "AB",
+    "SVTA",
+    "B"
+  ]
+}
+[init] pretrained_cnn_bilstm loaded 41 tensors from best_model.pt; skipped 2 mismatched tensors
+[init] loaded classifier weights from /Users/Sonny/Research/W｜ECFGClassifier/experiments/task_aware_denoiser_finetune/exp_004/checkpoints/stage1/best_state_dict.pt
+[init] loaded denoiser weights from /Users/Sonny/Research/W｜ECFGClassifier/experiments/task_aware_denoiser_finetune/exp_004/checkpoints/stage2/best_state_dict.pt
+[stage1][epoch 1/20][batch 1/61] loss=2.2378
+[stage1][epoch 1/20][batch 10/61] loss=1.4432
+[stage1][epoch 1/20][batch 20/61] loss=1.7882
+[stage1][epoch 1/20][batch 30/61] loss=1.6113
+[stage1][epoch 1/20][batch 40/61] loss=1.6361
+[stage1][epoch 1/20][batch 50/61] loss=1.6994
+[stage1][epoch 1/20][batch 60/61] loss=1.6995
+[stage1][epoch 1/20][batch 61/61] loss=1.6278
+[stage1][epoch 1/20] train_loss=1.7062 train_f1=0.2393 val_loss=1.6462 val_f1=0.1155
+[stage1][epoch 2/20][batch 1/61] loss=1.7267
+[stage1][epoch 2/20][batch 10/61] loss=1.6876
+[stage1][epoch 2/20][batch 20/61] loss=1.4373
+[stage1][epoch 2/20][batch 30/61] loss=1.4341
+[stage1][epoch 2/20][batch 40/61] loss=1.2573
+[stage1][epoch 2/20][batch 50/61] loss=1.7989
+[stage1][epoch 2/20][batch 60/61] loss=1.4421
+[stage1][epoch 2/20][batch 61/61] loss=1.5784
+[stage1][epoch 2/20] train_loss=1.5978 train_f1=0.3384 val_loss=1.6533 val_f1=0.2170
+[stage1][epoch 3/20][batch 1/61] loss=1.5505
+[stage1][epoch 3/20][batch 10/61] loss=1.7667
+[stage1][epoch 3/20][batch 20/61] loss=1.4383
+[stage1][epoch 3/20][batch 30/61] loss=1.3352
+[stage1][epoch 3/20][batch 40/61] loss=1.0122
+[stage1][epoch 3/20][batch 50/61] loss=1.6081
+[stage1][epoch 3/20][batch 60/61] loss=1.5510
+[stage1][epoch 3/20][batch 61/61] loss=1.5187
+[stage1][epoch 3/20] train_loss=1.5225 train_f1=0.4038 val_loss=1.5945 val_f1=0.3710
+[stage1][epoch 4/20][batch 1/61] loss=1.3759
+[stage1][epoch 4/20][batch 10/61] loss=1.1737
+[stage1][epoch 4/20][batch 20/61] loss=1.5674
+[stage1][epoch 4/20][batch 30/61] loss=1.6262
+[stage1][epoch 4/20][batch 40/61] loss=1.3606
+[stage1][epoch 4/20][batch 50/61] loss=1.4042
+[stage1][epoch 4/20][batch 60/61] loss=0.8310
+[stage1][epoch 4/20][batch 61/61] loss=1.0266
+[stage1][epoch 4/20] train_loss=1.4002 train_f1=0.4398 val_loss=1.5987 val_f1=0.2336
+[stage1][epoch 5/20][batch 1/61] loss=1.2381
+[stage1][epoch 5/20][batch 10/61] loss=1.1647
+[stage1][epoch 5/20][batch 20/61] loss=1.3168
+[stage1][epoch 5/20][batch 30/61] loss=1.5383
+[stage1][epoch 5/20][batch 40/61] loss=1.0899
+[stage1][epoch 5/20][batch 50/61] loss=0.9930
+[stage1][epoch 5/20][batch 60/61] loss=1.9326
+[stage1][epoch 5/20][batch 61/61] loss=1.5451
+[stage1][epoch 5/20] train_loss=1.2475 train_f1=0.4859 val_loss=1.7706 val_f1=0.1813
+[stage1][epoch 6/20][batch 1/61] loss=1.2487
+[stage1][epoch 6/20][batch 10/61] loss=1.2809
+[stage1][epoch 6/20][batch 20/61] loss=1.1607
+[stage1][epoch 6/20][batch 30/61] loss=1.1976
+[stage1][epoch 6/20][batch 40/61] loss=0.8229
+[stage1][epoch 6/20][batch 50/61] loss=0.7883
+[stage1][epoch 6/20][batch 60/61] loss=0.7438
+[stage1][epoch 6/20][batch 61/61] loss=0.6790
+[stage1][epoch 6/20] train_loss=1.1596 train_f1=0.5666 val_loss=1.7200 val_f1=0.2420
+[stage1][epoch 7/20][batch 1/61] loss=1.2223
+[stage1][epoch 7/20][batch 10/61] loss=0.9055
+[stage1][epoch 7/20][batch 20/61] loss=0.6856
+[stage1][epoch 7/20][batch 30/61] loss=0.5471
+[stage1][epoch 7/20][batch 40/61] loss=1.0586
+[stage1][epoch 7/20][batch 50/61] loss=1.1093
+[stage1][epoch 7/20][batch 60/61] loss=1.1095
+[stage1][epoch 7/20][batch 61/61] loss=0.5714
+[stage1][epoch 7/20] train_loss=0.9341 train_f1=0.6170 val_loss=1.6527 val_f1=0.2689
+[stage1][epoch 8/20][batch 1/61] loss=0.6324
+[stage1][epoch 8/20][batch 10/61] loss=0.3616
+[stage1][epoch 8/20][batch 20/61] loss=0.8178
+[stage1][epoch 8/20][batch 30/61] loss=1.0237
+[stage1][epoch 8/20][batch 40/61] loss=0.7818
+[stage1][epoch 8/20][batch 50/61] loss=0.8948
+[stage1][epoch 8/20][batch 60/61] loss=0.5995
+[stage1][epoch 8/20][batch 61/61] loss=0.7889
+[stage1][epoch 8/20] train_loss=0.8422 train_f1=0.6876 val_loss=1.8735 val_f1=0.3437
+[stage1][epoch 9/20][batch 1/61] loss=0.6245
+[stage1][epoch 9/20][batch 10/61] loss=0.5729
+[stage1][epoch 9/20][batch 20/61] loss=1.8248
+[stage1][epoch 9/20][batch 30/61] loss=1.1900
+[stage1][epoch 9/20][batch 40/61] loss=0.8885
+[stage1][epoch 9/20][batch 50/61] loss=0.5203
+[stage1][epoch 9/20][batch 60/61] loss=1.2409
+[stage1][epoch 9/20][batch 61/61] loss=0.9071
+[stage1][epoch 9/20] train_loss=0.8561 train_f1=0.6862 val_loss=1.6346 val_f1=0.4111
+[stage1][epoch 10/20][batch 1/61] loss=1.3685
+[stage1][epoch 10/20][batch 10/61] loss=0.9266
+[stage1][epoch 10/20][batch 20/61] loss=1.2878
+[stage1][epoch 10/20][batch 30/61] loss=0.5944
+[stage1][epoch 10/20][batch 40/61] loss=0.4624
+[stage1][epoch 10/20][batch 50/61] loss=0.5646
+[stage1][epoch 10/20][batch 60/61] loss=0.4049
+[stage1][epoch 10/20][batch 61/61] loss=0.9386
+[stage1][epoch 10/20] train_loss=0.7704 train_f1=0.7126 val_loss=2.1078 val_f1=0.3533
+[stage1][epoch 11/20][batch 1/61] loss=0.6675
+[stage1][epoch 11/20][batch 10/61] loss=0.9575
+[stage1][epoch 11/20][batch 20/61] loss=1.2059
+[stage1][epoch 11/20][batch 30/61] loss=0.4894
+[stage1][epoch 11/20][batch 40/61] loss=1.2330
+[stage1][epoch 11/20][batch 50/61] loss=0.7153
+[stage1][epoch 11/20][batch 60/61] loss=0.1916
+[stage1][epoch 11/20][batch 61/61] loss=0.3357
+[stage1][epoch 11/20] train_loss=0.6763 train_f1=0.7604 val_loss=1.9882 val_f1=0.4084
+[stage1][epoch 12/20][batch 1/61] loss=0.1744

@@ -1,0 +1,67 @@
+[manifest] resolving 3 day folders
+[manifest] class=NSR selected=12 train=9 val=2 test=1
+[manifest] class=AFIB selected=12 train=9 val=2 test=1
+[manifest] class=SBR selected=12 train=9 val=2 test=1
+[manifest] class=AB selected=12 train=9 val=2 test=1
+[manifest] class=SVTA selected=12 train=9 val=2 test=1
+[manifest] class=B selected=12 train=9 val=2 test=1
+[manifest] total_files=72 total_windows=579
+{
+  "exp_dir": "/Users/Sonny/Research/W\uff5cECFGClassifier/experiments/task_aware_denoiser_finetune/exp_010",
+  "device": "cpu",
+  "train_windows": 435,
+  "val_windows": 96,
+  "test_windows": 48,
+  "mapping_preset": "rmxjck_rhythm6_loose",
+  "classifier_input": "raw",
+  "classifier_only": false,
+  "batch_size": 8,
+  "num_workers": 0,
+  "file_batch_sampler": true,
+  "checkpoint_every_batches": 4000,
+  "class_order": [
+    "NSR",
+    "AFIB",
+    "SBR",
+    "AB",
+    "SVTA",
+    "B"
+  ]
+}
+[init] pretrained_cnn_bilstm from best_model.pt loaded 41 tensors; skipped 2 mismatched tensors
+[init] fine-tune warm start from best_state_dict.pt loaded 43 tensors; skipped 0 mismatched tensors
+[stage1][epoch 1/2][batch 1/55] loss=1.8793
+[stage1][epoch 1/2][batch 20/55] loss=1.5852
+[stage1][epoch 1/2][batch 40/55] loss=2.5667
+[stage1][epoch 1/2][batch 55/55] loss=0.7382
+[stage1][epoch 1/2] train_loss=1.5913 train_f1=0.3675 val_loss=1.6621 val_f1=0.1984
+[stage1][epoch 2/2][batch 1/55] loss=0.4244
+[stage1][epoch 2/2][batch 20/55] loss=1.2468
+[stage1][epoch 2/2][batch 40/55] loss=0.4233
+[stage1][epoch 2/2][batch 55/55] loss=1.4291
+[stage1][epoch 2/2] train_loss=1.2270 train_f1=0.5201 val_loss=1.7060 val_f1=0.1934
+[stage2][epoch 1/2][batch 1/55] loss=1.1082 cls=1.1082 anchor=0.000000 slope=0.000000
+[stage2][epoch 1/2][batch 20/55] loss=1.1635 cls=1.1635 anchor=0.000015 slope=0.000055
+[stage2][epoch 1/2][batch 40/55] loss=2.8341 cls=2.8341 anchor=0.000007 slope=0.000054
+[stage2][epoch 1/2][batch 55/55] loss=2.8262 cls=2.8262 anchor=0.000001 slope=0.000042
+[stage2][epoch 1/2] train_loss=2.0317 train_f1=0.0473 val_loss=2.0264 val_f1=0.0476
+[stage2][epoch 2/2][batch 1/55] loss=1.1638 cls=1.1638 anchor=0.000001 slope=0.000060
+[stage2][epoch 2/2][batch 20/55] loss=2.2154 cls=2.2154 anchor=0.000010 slope=0.000117
+[stage2][epoch 2/2][batch 40/55] loss=2.3559 cls=2.3559 anchor=0.000035 slope=0.000123
+[stage2][epoch 2/2][batch 55/55] loss=1.1090 cls=1.1090 anchor=0.000004 slope=0.000163
+[stage2][epoch 2/2] train_loss=2.0317 train_f1=0.0473 val_loss=2.0264 val_f1=0.0476
+{
+  "exp_dir": "/Users/Sonny/Research/W\uff5cECFGClassifier/experiments/task_aware_denoiser_finetune/exp_010",
+  "device": "cpu",
+  "train_windows": 435,
+  "val_windows": 96,
+  "test_windows": 48,
+  "stage1_val_accuracy": 0.2604166666666667,
+  "stage1_val_macro_f1": 0.1983948233948234,
+  "stage1_test_accuracy": 0.5416666666666666,
+  "stage1_test_macro_f1": 0.5206971677559913,
+  "stage2_val_accuracy": 0.16666666666666666,
+  "stage2_val_macro_f1": 0.047619047619047616,
+  "stage2_test_accuracy": 0.16666666666666666,
+  "stage2_test_macro_f1": 0.047619047619047616
+}
