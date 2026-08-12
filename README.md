@@ -1,6 +1,8 @@
-# W｜ECFGClassifier
+# Task-Aware ECG Classification and Denoising
 
-This project collects the code and experiment outputs for the ECG classifier-first workflow used to support task-aware denoiser fine-tuning.
+This repository contains a PyTorch research pipeline for ECG classification and task-aware denoiser fine-tuning. It treats downstream rhythm recognition as part of the denoising objective while retaining explicit morphology-preservation constraints.
+
+> Research prototype only. This project is not a clinically validated diagnostic system and does not include patient data.
 
 ## Goal
 
@@ -26,19 +28,19 @@ The current project also supports mapping the raw `Ecgdata` folders into alterna
 
 ## Layout
 
-- [scripts/run_task_aware_pipeline.py](/Users/Sonny/Research/W｜ECFGClassifier/scripts/run_task_aware_pipeline.py)
+- [scripts/run_task_aware_pipeline.py](scripts/run_task_aware_pipeline.py)
   Thin launcher for the structured package pipeline.
-- [src/wecfgclassifier/pipeline.py](/Users/Sonny/Research/W｜ECFGClassifier/src/wecfgclassifier/pipeline.py)
+- [src/wecfgclassifier/pipeline.py](src/wecfgclassifier/pipeline.py)
   Structured experiment orchestration: manifests, loaders, model setup, stage 1 classifier training, stage 2 denoiser fine-tuning, and reports.
-- [src/task_aware_finetune.py](/Users/Sonny/Research/W｜ECFGClassifier/src/task_aware_finetune.py)
+- [src/task_aware_finetune.py](src/task_aware_finetune.py)
   Backward-compatible wrapper around the package CLI.
-- [docs/PRETRAINED_CLASSIFIER_SCOUTING.md](/Users/Sonny/Research/W｜ECFGClassifier/docs/PRETRAINED_CLASSIFIER_SCOUTING.md)
+- [docs/PRETRAINED_CLASSIFIER_SCOUTING.md](docs/PRETRAINED_CLASSIFIER_SCOUTING.md)
   Notes on pretrained classifier candidates, their strengths, and why they are or are not directly usable in the current pipeline.
-- [docs/LABEL_MAPPING_PRESETS.md](/Users/Sonny/Research/W｜ECFGClassifier/docs/LABEL_MAPPING_PRESETS.md)
+- [docs/LABEL_MAPPING_PRESETS.md](docs/LABEL_MAPPING_PRESETS.md)
   Mapping presets for `raw19`, `rmxjck` rhythm alignment, and beat-branch pseudo-label alignment.
-- [mappings](/Users/Sonny/Research/W｜ECFGClassifier/mappings)
+- [mappings](mappings)
   JSON mapping presets used by the training script.
-- [experiments](/Users/Sonny/Research/W｜ECFGClassifier/experiments)
+- [experiments](experiments)
   Versioned experiment outputs.
 
 ## Current Design Choice
